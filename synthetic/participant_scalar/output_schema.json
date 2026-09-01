@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "predictions.csv row",
+  "description": "CSV with exactly these columns in this order; one row per identifier tuple from input.csv.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "participant_id",
+    "prediction"
+  ],
+  "properties": {
+    "participant_id": {
+      "type": "string",
+      "description": "canonical UUID from input.csv"
+    },
+    "prediction": {
+      "type": "number",
+      "description": "finite value in percent"
+    }
+  }
+}

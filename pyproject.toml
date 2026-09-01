@@ -1,0 +1,19 @@
+[project]
+name = "phenobench-materials"
+version = "0.1.0"
+description = "Anonymous, public-safe PhenoBench benchmark materials: synthetic examples, container contract, static leaderboard."
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest==8.4.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["submission_materials"]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"

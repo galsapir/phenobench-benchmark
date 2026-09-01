@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PhenoBench public result snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "status", "source_commit", "source_digest", "generated_at", "results"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "status": {"enum": ["provisional", "final"]},
+    "source_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "source_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["track_id", "method_label", "allowed_input_family", "metric_name", "metric_value", "curation_state", "caveat"],
+        "properties": {
+          "track_id": {"type": "string"},
+          "method_label": {"type": "string"},
+          "allowed_input_family": {"enum": ["demographics", "single_modality", "multimodal", "sequence_context", "other"]},
+          "metric_name": {"type": "string"},
+          "metric_value": {"type": "number"},
+          "cohort_n": {"type": "integer", "minimum": 1},
+          "curation_state": {"enum": ["provisional", "curated", "publishable", "withheld"]},
+          "caveat": {"type": "string"}
+        }
+      }
+    }
+  }
+}

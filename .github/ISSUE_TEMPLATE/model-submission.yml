@@ -1,0 +1,63 @@
+name: Model submission
+description: Request a maintainer-run evaluation of a digest-pinned OCI image
+title: "[Model submission]: "
+labels: ["model-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit only public image metadata. Never include participant data, credentials, or private predictions.
+  - type: input
+    id: model_name
+    attributes:
+      label: Model and method name
+    validations:
+      required: true
+  - type: input
+    id: image_digest
+    attributes:
+      label: Public OCI image pinned by digest
+      description: Use registry/image@sha256:...; mutable tags are rejected.
+      placeholder: ghcr.io/example/model@sha256:...
+    validations:
+      required: true
+  - type: textarea
+    id: benchmark_tracks
+    attributes:
+      label: Requested Benchmark Tracks
+      description: List exact Track identifiers from the public catalog.
+    validations:
+      required: true
+  - type: textarea
+    id: method_description
+    attributes:
+      label: Method description
+      description: Describe training exposure, inputs, preprocessing, and external resources.
+    validations:
+      required: true
+  - type: textarea
+    id: compute
+    attributes:
+      label: Compute requirements
+      description: CPU, memory, runtime estimate, architecture, and any GPU requirement.
+    validations:
+      required: true
+  - type: checkboxes
+    id: contract
+    attributes:
+      label: Execution contract
+      options:
+        - label: The image runs without network access and writes only `/output/predictions.csv`.
+          required: true
+        - label: The image reference is immutable and requires no credentials.
+          required: true
+  - type: checkboxes
+    id: publish_result
+    attributes:
+      label: Result publication
+      options:
+        - label: Aggregate results and the submitted model/method metadata may be published.
+          required: true
+  - type: markdown
+    attributes:
+      value: Evaluation is manual, capacity-limited, and has no guaranteed turnaround.

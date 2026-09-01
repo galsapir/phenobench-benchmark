@@ -1,0 +1,14 @@
+{
+  "manifest_schema_version": 1,
+  "task_id": "event_scalar_next_night_sleep_like",
+  "grain": "event",
+  "identifier_columns": [
+    "evaluation_unit_id"
+  ],
+  "input_file": "input.csv",
+  "prediction_file_name": "predictions.csv",
+  "prediction_column": "prediction",
+  "target_description": "next-night mean sleeping heart rate-like scalar in bpm, one per participant-night",
+  "data_origin": "synthetic; every value fabricated from a seeded generator",
+  "example_constant_prediction": 60.0
+}

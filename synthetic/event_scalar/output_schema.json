@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "predictions.csv row",
+  "description": "CSV with exactly these columns in this order; one row per identifier tuple from input.csv.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluation_unit_id",
+    "prediction"
+  ],
+  "properties": {
+    "evaluation_unit_id": {
+      "type": "string",
+      "description": "opaque event key from input.csv"
+    },
+    "prediction": {
+      "type": "number",
+      "description": "finite value in bpm"
+    }
+  }
+}

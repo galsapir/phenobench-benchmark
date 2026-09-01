@@ -1,0 +1,20 @@
+{
+  "model_family_summary": {
+    "source_commit": "c0aa22c8c87b5cebbd8a810315af249feff13191",
+    "source_digest": "sha256:a988452070c184deef00465c7c6cf0d5792c573258ff9382aab016346ae65ed7"
+  },
+  "pb": {
+    "source_commit": "09652513fbcdf4fba92979d2b22b08080aa8b2b8",
+    "source_digest": "sha256:b31b1f2398d429d19f1958dbcb5eee966f2ac9ba899faa5f03b9c92303998800"
+  },
+  "pb_llm": {
+    "files": {
+      "category_summary.csv": "sha256:a721d2fa813bc0ab0981f1dedd8700669a5793fdee699d42db482d912e53342e",
+      "task_rows.csv": "sha256:6dc81a480d99b04e53221ad72513a3f771ba2200a38688bddba643229122506b",
+      "win_rates.csv": "sha256:bb70b91d61304a5936be248559f4814b013dbf072ad9bb43904deb937cd95a71",
+      "win_rates_common.csv": "sha256:0e0a299423d9350904a178df527eb3f1e396aed8c75a38a0e8d3873a2cfa163f"
+    },
+    "source_commit": "cd5b9c8d2a16af7b12a74681c32890764391cd34"
+  },
+  "schema_version": 1
+}

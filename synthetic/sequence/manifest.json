@@ -1,0 +1,25 @@
+{
+  "manifest_schema_version": 1,
+  "task_id": "sequence_meal_cgm_trajectory_like",
+  "grain": "sequence",
+  "identifier_columns": [
+    "evaluation_unit_id",
+    "offset_minutes"
+  ],
+  "input_file": "input.csv",
+  "prediction_file_name": "predictions.csv",
+  "prediction_column": "prediction",
+  "target_description": "post-meal interstitial glucose-like trajectory in mg/dL on a fixed 15-minute grid",
+  "data_origin": "synthetic; every value fabricated from a seeded generator",
+  "required_offsets_minutes": [
+    15,
+    30,
+    45,
+    60,
+    75,
+    90,
+    105,
+    120
+  ],
+  "example_constant_prediction": 100.0
+}
