@@ -10,16 +10,18 @@ ROOT = Path(__file__).parents[1]
 MANIFEST = ROOT / "MANIFEST.sha256"
 
 
-def public_files() -> list[Path]:
+def public_files(root: Path = ROOT) -> list[Path]:
     result = subprocess.run(
-        ["git", "ls-files", "--cached", "--others", "--exclude-standard"],
-        cwd=ROOT,
+        ["git", "ls-files", "--cached"],
+        cwd=root,
         check=True,
         capture_output=True,
         text=True,
     )
-    paths = [ROOT / line for line in result.stdout.splitlines()]
-    return sorted(path for path in paths if path != MANIFEST and path.is_file())
+    paths = [root / line for line in result.stdout.splitlines()]
+    return sorted(
+        path for path in paths if path != root / MANIFEST.name and path.is_file()
+    )
 
 
 def main() -> None:

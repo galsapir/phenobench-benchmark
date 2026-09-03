@@ -6,6 +6,8 @@ import csv
 import hashlib
 import importlib.util
 import json
+import re
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -17,6 +19,15 @@ PACKAGE = ROOT / "pb-llm"
 def _load_evaluation_module():
     path = PACKAGE / "code" / "evaluation.py"
     spec = importlib.util.spec_from_file_location("pb_llm_public_evaluation", path)
+    assert spec is not None and spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def _load_manifest_module():
+    path = ROOT / "scripts" / "build_manifest.py"
+    spec = importlib.util.spec_from_file_location("public_manifest", path)
     assert spec is not None and spec.loader is not None
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -157,6 +168,27 @@ def test_taxonomy_and_coverage_match_public_aggregate_results() -> None:
     assert {(row["task"], row["model_key"]) for row in coverage} == result_pairs
 
 
+def test_evaluation_config_matches_public_models_and_provenance() -> None:
+    config = json.loads((PACKAGE / "configs" / "evaluation.json").read_text())
+    cohorts = json.loads((PACKAGE / "metadata" / "cohort-manifests.json").read_text())[
+        "cohorts"
+    ]
+    with (PACKAGE / "metadata" / "model-task-coverage.csv").open(newline="") as handle:
+        coverage = list(csv.DictReader(handle))
+    with (ROOT / "data" / "pb-llm" / "win_rates.csv").open(newline="") as handle:
+        leaderboard = list(csv.DictReader(handle))
+
+    configured_models = {row["model_key"] for row in config["models"]}
+    assert configured_models == {row["model_key"] for row in coverage}
+    assert configured_models == {row["model_key"] for row in leaderboard}
+    assert len(configured_models) == 14
+    assert {row["source_commit"] for row in cohorts} == {config["source_commit"]}
+    ranking_cohorts = [row for row in cohorts if row["task"].endswith("_group_rank")]
+    assert len(ranking_cohorts) == 6
+    assert all(row["sampling_method"] == "120 seeded groups of 4" for row in ranking_cohorts)
+    assert all(row["sampling_seed"] == 20260826 for row in ranking_cohorts)
+
+
 def test_cohort_manifests_are_allowlisted_and_cover_every_public_task() -> None:
     payload = json.loads((PACKAGE / "metadata" / "cohort-manifests.json").read_text())
     allowed = {
@@ -176,16 +208,47 @@ def test_cohort_manifests_are_allowlisted_and_cover_every_public_task() -> None:
     assert len(payload["cohorts"]) == 40
     assert all(set(row) == allowed for row in payload["cohorts"])
     assert all(row["eval_split"] == "validation" for row in payload["cohorts"])
+    assert all(
+        re.fullmatch(r"[0-9a-f]{64}", row["scored_support_sha256"])
+        for row in payload["cohorts"]
+    )
+
+
+def test_generated_metadata_uses_repository_line_endings() -> None:
+    for path in (PACKAGE / "metadata").glob("*.csv"):
+        assert b"\r\n" not in path.read_bytes(), path
+
+
+def test_manifest_builder_ignores_untracked_files(tmp_path: Path) -> None:
+    subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True)
+    tracked = tmp_path / "tracked.txt"
+    untracked = tmp_path / "untracked.txt"
+    tracked.write_text("public\n")
+    untracked.write_text("local only\n")
+    subprocess.run(["git", "add", tracked.name], cwd=tmp_path, check=True)
+
+    manifest = _load_manifest_module()
+
+    assert manifest.public_files(tmp_path) == [tracked]
 
 
 def test_release_has_no_forbidden_file_types_or_private_path_markers() -> None:
     forbidden_suffixes = {".parquet", ".jsonl"}
     forbidden_markers = (
         "/home/",
+        "/Users/",
         "participant_id",
         "evaluation_unit_id",
         "OPENROUTER_API_KEY",
         "AWS_SECRET_ACCESS_KEY",
+        "postgres://",
+        "s3://",
+    )
+    forbidden_patterns = (
+        re.compile(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", re.IGNORECASE),
+        re.compile(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}\b", re.IGNORECASE),
+        re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
+        re.compile(r"\b(?:ghp|github_pat)_[A-Za-z0-9_]{20,}\b"),
     )
     files = [
         path for path in PACKAGE.rglob("*") if path.is_file() and path.suffix != ".pyc"
@@ -194,6 +257,7 @@ def test_release_has_no_forbidden_file_types_or_private_path_markers() -> None:
     for path in files:
         text = path.read_text()
         assert not any(marker in text for marker in forbidden_markers), path
+        assert not any(pattern.search(text) for pattern in forbidden_patterns), path
 
 
 def test_release_files_are_digest_pinned_in_repository_manifest() -> None:
