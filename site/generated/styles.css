@@ -12,6 +12,7 @@ nav { display:flex; gap:1.1rem; }
 nav a { color:var(--muted); font-size:.84rem; font-weight:650; text-decoration:none; }
 main { max-width:1120px; margin:0 auto; padding:0 1.25rem 6rem; }
 section { padding:5rem 0; border-bottom:1px solid var(--line); }
+section { scroll-margin-top:62px; }
 .hero { min-height:620px; display:flex; flex-direction:column; justify-content:center; }
 .eyebrow { margin:0 0 .8rem; color:var(--blue); font:700 .74rem/1.2 ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing:.09em; text-transform:uppercase; }
 h1,h2 { font-family:Charter,"Iowan Old Style",Georgia,serif; letter-spacing:-.035em; }
@@ -32,6 +33,22 @@ p { max-width:760px; }
 .task-card span { margin-top:.25rem; color:var(--blue-deep); font-size:.78rem; text-transform:capitalize; }
 .task-card small { margin-top:auto; padding-top:.8rem; color:var(--muted); font:.72rem/1.35 ui-monospace,SFMono-Regular,Menlo,monospace; }
 .data-link,.caveat { color:var(--muted); font-size:.84rem; }
+.llm-chart { margin:2.25rem 0 1.4rem; }
+.llm-chart figcaption { margin-bottom:.8rem; color:var(--muted); font:.72rem/1.35 ui-monospace,SFMono-Regular,Menlo,monospace; text-transform:uppercase; letter-spacing:.05em; }
+.llm-chart-axis,.llm-chart-row { display:grid; grid-template-columns:4.5rem minmax(320px,1fr) 13rem; gap:1rem; align-items:center; }
+.llm-chart-axis { margin-bottom:.35rem; color:var(--muted); font:.65rem/1 ui-monospace,SFMono-Regular,Menlo,monospace; text-transform:uppercase; }
+.llm-axis-scale { display:flex; justify-content:space-between; }
+.llm-axis-scale i { font-style:normal; }
+.llm-axis-scale i:last-child { transform:none; }
+.llm-chart-row { min-height:2.65rem; border-top:1px solid #e5eaf2; }
+.llm-chart-row:last-child { border-bottom:1px solid #e5eaf2; }
+.llm-score { color:var(--blue-deep); font-variant-numeric:tabular-nums; text-align:right; }
+.llm-model { font:650 .82rem/1.2 ui-monospace,SFMono-Regular,Menlo,monospace; }
+.llm-plot { height:1.9rem; position:relative; border-right:1px solid var(--line); border-left:1px solid var(--line); background-image:linear-gradient(to right,var(--line) 1px,transparent 1px); background-size:25% 100%; }
+.llm-bar { position:absolute; left:0; top:.48rem; width:var(--score); height:.94rem; background:var(--blue); }
+.llm-ci { position:absolute; z-index:1; left:var(--ci-low); right:calc(100% - var(--ci-high)); top:.92rem; border-top:2px solid var(--coral); }
+.llm-ci::before,.llm-ci::after { content:""; position:absolute; top:-.28rem; height:.48rem; border-left:2px solid var(--coral); }
+.llm-ci::before { left:0; }.llm-ci::after { right:0; }
 table { width:100%; margin:2rem 0 1rem; border-collapse:collapse; background:var(--panel); font-size:.9rem; }
 th,td { padding:.72rem .75rem; border-bottom:1px solid var(--line); text-align:left; }
 th { color:var(--muted); font:700 .7rem/1 ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing:.05em; text-transform:uppercase; }
@@ -48,5 +65,5 @@ pre { padding:.75rem 1rem; overflow-x:auto; background:#eef2f8; }
 dl.prov { display:grid; grid-template-columns:max-content 1fr; gap:.3rem 1rem; font-size:.86rem; }
 dl.prov dt { color:var(--muted); }
 dl.prov dd { margin:0; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; word-break:break-all; }
-@media (max-width:760px) { .site-header nav{display:none}.hero{min-height:540px}.route-line{grid-template-columns:1fr;align-items:stretch;text-align:center}.route-line b{transform:rotate(90deg)}.task-grid,.steps{grid-template-columns:1fr}table{display:block;overflow-x:auto;white-space:nowrap} }
+@media (max-width:760px) { .site-header nav{display:none}.hero{min-height:540px}.route-line{grid-template-columns:1fr;align-items:stretch;text-align:center}.route-line b{transform:rotate(90deg)}.task-grid,.steps{grid-template-columns:1fr}table{display:block;overflow-x:auto;white-space:nowrap}.llm-chart-axis{grid-template-columns:3.75rem minmax(0,1fr);gap:.75rem}.llm-chart-axis>span:last-child{display:none}.llm-chart-row{grid-template-columns:3.75rem minmax(0,1fr);gap:.75rem;padding:.55rem 0}.llm-model{grid-column:2;grid-row:1}.llm-score{grid-column:1;grid-row:2}.llm-plot{grid-column:2;grid-row:2} }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
