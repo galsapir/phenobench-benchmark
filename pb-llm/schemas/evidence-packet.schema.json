@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://galsapir.github.io/phenobench-benchmark/pb-llm/schemas/evidence-packet.schema.json",
+  "title": "PhenoBench-LLM evidence packet",
+  "description": "Public structure of one evidence packet. Values in the example are fabricated.",
+  "type": "object",
+  "properties": {
+    "demographics": {
+      "type": "object",
+      "properties": {
+        "age_years": {"type": "number"},
+        "sex": {"enum": ["female", "male"]},
+        "bmi_kg_m2": {"type": "number"}
+      },
+      "additionalProperties": false
+    },
+    "cgm": {
+      "type": "object",
+      "description": "Allowlisted iglu summary statistics; GMI and eA1c are excluded.",
+      "propertyNames": {
+        "enum": [
+          "iglu_mean",
+          "iglu_median",
+          "iglu_sd",
+          "iglu_cv",
+          "iglu_iqr",
+          "iglu_range",
+          "iglu_1st_quartile",
+          "iglu_3rd_quartile",
+          "iglu_mage",
+          "iglu_conga",
+          "iglu_modd",
+          "iglu_auc",
+          "iglu_j_index",
+          "iglu_in_range_70_180",
+          "iglu_above_140",
+          "iglu_above_180",
+          "iglu_below_70",
+          "iglu_hbgi",
+          "iglu_lbgi"
+        ]
+      },
+      "additionalProperties": {"type": "number"}
+    },
+    "nightingale": {
+      "type": "object",
+      "description": "Allowlisted Nightingale NMR measurements.",
+      "propertyNames": {
+        "enum": [
+          "Total_C",
+          "non_HDL_C",
+          "Remnant_C",
+          "VLDL_C",
+          "Clinical_LDL_C",
+          "LDL_C",
+          "HDL_C",
+          "Total_TG",
+          "VLDL_TG",
+          "LDL_TG",
+          "HDL_TG",
+          "Total_PL",
+          "VLDL_PL",
+          "LDL_PL",
+          "HDL_PL",
+          "ApoB",
+          "ApoA1",
+          "ApoB_by_ApoA1",
+          "Total_FA",
+          "PUFA",
+          "MUFA",
+          "SFA",
+          "Omega_3",
+          "Omega_6",
+          "PUFA_pct",
+          "Omega_3_pct",
+          "Glucose",
+          "GlycA",
+          "Total_BCAA",
+          "Ala",
+          "Gly",
+          "Creatinine",
+          "Albumin"
+        ]
+      },
+      "additionalProperties": {"type": "number"}
+    },
+    "baseline_measurement": {
+      "type": "object",
+      "description": "For longitudinal tasks only: the baseline value of the follow-up target.",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": {"type": "number"}
+    }
+  },
+  "additionalProperties": false
+}

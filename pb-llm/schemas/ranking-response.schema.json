@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://galsapir.github.io/phenobench-benchmark/pb-llm/schemas/ranking-response.schema.json",
+  "title": "PhenoBench-LLM ranking response",
+  "type": "object",
+  "properties": {
+    "ranking_high_to_low": {"type": "array", "items": {"type": "string"}},
+    "reasoning": {"type": "string"}
+  },
+  "required": ["ranking_high_to_low", "reasoning"],
+  "additionalProperties": false
+}

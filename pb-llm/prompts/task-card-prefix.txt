@@ -1,0 +1,4 @@
+Background from the benchmark's Task Card for this measurement:
+{{SANITIZED_TASK_CARD}}
+
+{{PARTICIPANT_ESTIMATE_PROMPT}}

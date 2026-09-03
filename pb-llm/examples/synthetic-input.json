@@ -1,0 +1,17 @@
+{
+  "demographics": {
+    "age_years": 52.4,
+    "sex": "female",
+    "bmi_kg_m2": 26.1
+  },
+  "cgm": {
+    "iglu_mean": 101.7,
+    "iglu_sd": 17.6,
+    "iglu_in_range_70_180": 96.2
+  },
+  "nightingale": {
+    "Total_C": 4.91,
+    "HDL_C": 1.43,
+    "GlycA": 1.08
+  }
+}

@@ -1,0 +1,4 @@
+{{TASK_QUESTION}}
+Evidence (JSON; CGM fields are iglu summary statistics of a ~2-week continuous glucose monitoring connection in mg/dL; nightingale fields are Nightingale NMR serum metabolomics in {{NMR_UNITS}}):
+{{EVIDENCE_PACKET_JSON}}
+Respond with JSON: {"{{RESPONSE_FIELD}}": <number>, "reasoning": "<one or two sentences>"}.

@@ -1,0 +1,4 @@
+Below are {{GROUP_SIZE}} participants of a deep-phenotyping cohort, labelled {{LABELS}}. Rank them from highest to lowest {{TARGET_LABEL}} measured at the same study visit.
+Evidence per participant (JSON; CGM fields are iglu summary statistics of a ~2-week continuous glucose monitoring connection in mg/dL; nightingale fields are Nightingale NMR serum metabolomics in mmol/L):
+{{LABELLED_EVIDENCE_PACKETS}}
+Respond with JSON: {"ranking_high_to_low": ["<label>", ...] (every label exactly once), "reasoning": "<one or two sentences>"}.

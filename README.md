@@ -8,6 +8,8 @@ provides:
   and their valid Benchmark Tracks;
 - static per-track leaderboards generated from the final Figure 1 evidence;
 - the 40-task PhenoBench-LLM proof-of-concept leaderboard;
+- a sanitized PhenoBench-LLM reproducibility package with frozen prompts,
+  schemas, synthetic examples, evaluation code, and cohort-level provenance;
 - privacy-reviewed Task Cards;
 - fabricated, schema-faithful input/output examples;
 - a digest-pinned OCI prediction contract; and
@@ -57,6 +59,7 @@ source result changes.
 
 ```text
 data/                 allowlisted aggregate PB and PhenoBench-LLM evidence
+pb-llm/               sanitized PhenoBench-LLM prompts, contracts and evaluation metadata
 task-cards/           sanitized scientific context for public Tasks
 site/generated/       static landing page and 93 per-task/diagnostic result pages
 synthetic/            fabricated participant, event, and sequence examples

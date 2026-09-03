@@ -1,0 +1,1 @@
+Estimate the {{TARGET_LABEL}} of a typical adult participant of a deep-phenotyping cohort study in Israel (ages roughly 40-70), in {{UNIT_PHRASE}}. No individual evidence is available; give your best population-level point estimate. Respond with JSON: {"{{RESPONSE_FIELD}}": <number>, "reasoning": "<one or two sentences>"}.

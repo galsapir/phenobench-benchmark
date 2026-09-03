@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://galsapir.github.io/phenobench-benchmark/pb-llm/schemas/response.schema.json",
+  "title": "PhenoBench-LLM scalar response example",
+  "description": "The experiment replaced 'estimate' with each task's response-field name. Classification estimates were additionally constrained to [0, 1].",
+  "type": "object",
+  "properties": {
+    "estimate": {"type": "number"},
+    "reasoning": {"type": "string"}
+  },
+  "required": ["estimate", "reasoning"],
+  "additionalProperties": false
+}
