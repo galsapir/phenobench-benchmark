@@ -1,7 +1,5 @@
 # Hypertension Status Task Card
 
-Status: draft
-
 Task id: `hypertension_status`
 
 Evidence status: grounded
@@ -18,7 +16,7 @@ Implementation facts:
 - target dataset release: `anat_curated_phenotype`
 - target table: `anat.curated_phenotype.hypertension`
 - target column read: `curated_phenotype`. **This is hardcoded in the loader**
-  (`hpp_loader.py:1450`), not taken from the Task
+  (an internal review record), not taken from the Task
 - `target_field` on the class is `hypertension__curated_phenotype` and is **inert on
   this release** - it is read only by the alternate `frozen_v1_2` route
   (`_curated_phenotype_status.py:336`). Do not treat it as the operative field
@@ -45,7 +43,7 @@ hypertension is being detected.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/hypertension_status_review.json`,
+an internal review record,
 test split:
 
 - V1 fundus + demographics reaches test ROC AUC = 0.805 (95% CI [0.762, 0.845])
@@ -124,8 +122,8 @@ Brier score, positive rate, split sizes.
 
 ## References
 
-- Xue oral microbiome disease-classification paper artifacts in Research OS.
-- Research OS run: `research_runs/phenobench-paper-task/xue_oral_microbiome_2026_06_21/`.
+- Xue oral microbiome disease-classification paper artifacts in HPP documentation.
+- HPP documentation run: `research_runs/phenobench-paper-task/xue_oral_microbiome_2026_06_21/`.
 
 ## Benchmark-Track Evidence
 
@@ -136,7 +134,7 @@ hypertension fields remain excluded. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

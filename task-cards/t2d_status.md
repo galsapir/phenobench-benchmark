@@ -1,7 +1,5 @@
 # T2D Status Task Card
 
-Status: draft
-
 Task id: `t2d_status`
 
 Evidence status: grounded
@@ -106,8 +104,8 @@ threshold decision. Two variants are worth naming, one defensible and one not:
   separate binary.
 - **The label already fires on ONE abnormal value, and that is the thing to
   know about it.** `positive = self_reported | hba1c >= 6.5 | fpg >= 126.0`
-  (`hpp_loader.py:1551`), with no confirmatory second measurement anywhere in
-  the rule; `tests/test_hpp_loader.py` pins HbA1c-only and FPG-only cases as
+  (an internal review record), with no confirmatory second measurement anywhere in
+  the rule; `tests/test_an internal review record pins HbA1c-only and FPG-only cases as
   positive. ADA requires a confirmatory second test for an asymptomatic person
   (ADA 2026), and the HPP reclassification measurement above shows why: 3% of
   participants normal on a first fasting glucose reach the diabetes range on a
@@ -129,7 +127,7 @@ whole content of the non-claim above.
 
 Benchmark-Track Evidence reviewed: 2026-07-29.
 
-OpenEvidence review supports CGM summaries and DXA body composition as compact
+literature review supports CGM summaries and DXA body composition as compact
 status-discrimination panels beyond age, sex, and BMI. These are
 cross-sectional disease-state associations, not incident T2D prediction.
 The approved label route is CGM-independent, so CGM can be evaluated without
@@ -190,10 +188,10 @@ balanced accuracy use threshold 0.5 and are secondary only.
 
 - Carletti et al. (2025), multimodal AI correlates of glucose spikes,
   *Nature Medicine*, <https://doi.org/10.1038/s41591-025-03849-7>. Local copy in
-  **research-os**: `assets/papers/hpp/carletti_2025_multimodal_ai_correlates_of_glucose_spik/`.
-- HPP medical-condition code route, in **research-os**:
+  **HPP documentation**: `assets/papers/hpp/carletti_2025_multimodal_ai_correlates_of_glucose_spik/`.
+- HPP medical-condition code route, in **HPP documentation**:
   `assets/datasets/medical_conditions/loader.md`
-- Prediabetes/T2D code caveat, in **research-os**:
+- Prediabetes/T2D code caveat, in **HPP documentation**:
   `assets/datasets/medical_conditions/notes.md`
 - Bragg et al. (2022), circulating NMR biomarkers and incident T2D risk,
   <https://doi.org/10.1186/s12916-022-02354-9>.

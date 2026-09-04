@@ -1,7 +1,5 @@
 # Fundus Artery Fractal Dimension Task Card
 
-Status: draft
-
 Task id: `fundus_artery_fractal_dimension`
 
 Evidence status: grounded
@@ -70,7 +68,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Zhou et al. (2022), AutoMorph, <https://doi.org/10.1167/tvst.11.7.12>.
 - Shapira et al. (2024), RetiMap: HPP retinal vascular measures (medRxiv preprint), <https://doi.org/10.1101/2024.04.05.24305164>.
-- HPP Research OS `fundus` dataset documentation and QC inventory.
+- HPP documentation `fundus` dataset documentation and QC inventory.
 
 ## Execution Evidence
 

@@ -1,7 +1,5 @@
 # QT Interval Task Card
 
-Status: draft
-
 Task id: `qt_interval`
 
 Evidence status: grounded
@@ -75,7 +73,7 @@ residual strata for heart rate/RR, QRS, rhythm/quality, and software era.
   <https://doi.org/10.2174/1573403X10666140514103612>.
 - Vandenberk et al. (2016), QT correction,
   <https://doi.org/10.1161/JAHA.116.003264>.
-- HPP [`ecg` dataset documentation](https://github.com/PhenoAI/research-os/tree/main/assets/datasets/ecg).
+- HPP `ecg` dataset documentation.
 
 ## Benchmark-Track Evidence
 
@@ -86,7 +84,7 @@ remain excluded. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

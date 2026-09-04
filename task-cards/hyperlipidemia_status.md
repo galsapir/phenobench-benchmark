@@ -1,7 +1,5 @@
 # Hyperlipidemia Status Task Card
 
-Status: draft
-
 Task id: `hyperlipidemia_status`
 
 Evidence status: grounded
@@ -53,7 +51,7 @@ score well by detecting either.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/hyperlipidemia_status_review.json`,
+an internal review record,
 test split:
 
 - V1 CGM + demographics reaches test ROC AUC = 0.704 (95% CI [0.655, 0.749]) on
@@ -140,8 +138,8 @@ Brier score, positive rate, split sizes.
 
 - DS-1584 Yeela-selected condition curation:
   `pha_condition_projection/DS-1584/condition_candidates_detailed.csv`.
-  **Does not resolve** in this repository or in research-os / research-harness /
-  research-os-stable; kept because it is the only pointer to how this condition
+  **Does not resolve** in this repository or in HPP documentation / HPP documentation /
+  HPP documentation; kept because it is the only pointer to how this condition
   was selected, and marked so it is not read as a repo path.
 - HPP `curated_phenotypes` dataset docs for the hyperlipidemia sibling fields.
 
@@ -154,7 +152,7 @@ excluded because they define or reveal this composite label. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

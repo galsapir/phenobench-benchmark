@@ -1,7 +1,5 @@
 # ApoB Task Card
 
-Status: draft
-
 Task id: `apob`
 
 Evidence status: grounded
@@ -41,7 +39,7 @@ immunoassay result, which is what every published ApoB threshold is defined on.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from the deep dive in
-`docs/figure1/apob_review.json`, test split:
+an internal review record, test split:
 
 - The best raw scores come from GBDT: V1 CGM + demographics reaches test R2 =
   0.075 (95% CI [0.046, 0.106]) on a cohort of 9,137; V1 DXA + demographics
@@ -129,19 +127,19 @@ available.
 - Sniderman et al., 2024, apoB discordance and cardiovascular prevention:
   <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11242442/>
 - Han et al. (2026), multi-omics dietary patterns and cardiometabolic risk,
-  *medRxiv*, <https://doi.org/10.64898/2026.02.23.26346874>. Local copy in **research-os**:
+  *medRxiv*, <https://doi.org/10.64898/2026.02.23.26346874>. Local copy in **HPP documentation**:
   `assets/papers/hpp/han_2026_multi_omics_characterization_of_biologic/`.
 
 ## Benchmark-Track Evidence
 
-Benchmark-Track Evidence reviewed: 2026-07-29. OpenEvidence and HPP review prioritizes V1 DXA
+Benchmark-Track Evidence reviewed: 2026-07-29. literature and HPP review prioritizes V1 DXA
 and CGM beyond age/sex/BMI. All lipid/Nightingale inputs remain excluded because
 same-assay siblings can reconstruct ApoB. See
 `04-cardiovascular-lipid.md`.
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

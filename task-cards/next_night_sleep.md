@@ -1,7 +1,5 @@
 # Next-Night Sleep Task Card
 
-Status: draft
-
 Task id: `next_night_sleep`
 
 Evidence status: grounded
@@ -113,7 +111,7 @@ temporal PhenoBench lane after meal-level PPGR because it exercises repeated
 participant-night units, participant-level splitting, future-field leakage
 policy, and row-level evaluation ids without adding a broad temporal platform.
 
-The strongest source anchor is sleeping heart rate: the Shkolnik/research-os
+The strongest source anchor is sleeping heart rate: the Shkolnik/HPP documentation
 scorecard preserves fiber and whole-plant associations with overnight HR better
 than several other sleep outcomes.
 
@@ -129,7 +127,7 @@ design - the target-trial emulation this Task deliberately is not.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/next_night_sleep_review.json`,
+an internal review record,
 test split:
 
 - Prior-day diet reaches test R2 = 0.149 (95% CI [0.115, 0.181]) on 29,642
@@ -457,7 +455,7 @@ task variants, but the baseline signal is modest.
 - Their gain is relative to the matched demographic-only model. Previous-night
   sleep would change the Allowed Information Set and therefore belongs in a
   separate Benchmark Track or reference, not inside these three Tracks.
-- TabSwift is deferred until GPU execution. Full contract and results:
+-  Full contract and results:
   `05-sleep-gut-aging.md`.
 
 ## Open Questions

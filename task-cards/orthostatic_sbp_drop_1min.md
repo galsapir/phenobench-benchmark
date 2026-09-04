@@ -1,7 +1,5 @@
 # One-Minute Orthostatic SBP Drop Task Card
 
-Status: draft
-
 Task id: `orthostatic_sbp_drop_1min`
 
 Evidence status: grounded
@@ -80,7 +78,7 @@ quantiles, and same-cohort deltas versus LOCF.
   <https://doi.org/10.1001/jamainternmed.2017.2937>.
 - American Heart Association (2024), orthostatic hypotension in adults with
   hypertension, <https://doi.org/10.1161/HYP.0000000000000236>.
-- HPP Research OS `blood_pressure` dataset documentation and QC inventory.
+- HPP documentation `blood_pressure` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -107,12 +105,12 @@ See `04-cardiovascular-lipid.md`.
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 
 - Domain-expert review remains outstanding; evidence grounding and real-run gates are complete.
 - The multimeasure autonomic endpoint audit is tracked in
-  [#30](https://github.com/PhenoAI/phenobench/issues/30).
+  #30.
 - Cross-modal V1 value-add is tracked in
-  [#28](https://github.com/PhenoAI/phenobench/issues/28).
+  #28.

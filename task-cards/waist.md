@@ -1,7 +1,5 @@
 # Waist Circumference Task Card
 
-Status: draft
-
 Task id: `waist`
 
 Evidence status: grounded
@@ -44,7 +42,7 @@ number is lift over the anthropometric floor, not raw R2.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and paperclip search support a BMI-independent Nightingale
+literature review and literature search support a BMI-independent Nightingale
 signature most strongly for VAT, not waist itself. Waist remains a useful
 body-shape probe when every direct anthropometric reconstruction field is
 excluded. The proposed V1/V2 track uses only age, sex, BMI, and the fixed
@@ -69,7 +67,7 @@ demographic-floor delta R2 and matched comparison to `vat`.
 - Waist-circumference cardiovascular-risk context from the source material's
   INTERHEART reference.
 - Shilo et al. (2026), heterogeneity of insulin-resistance surrogates,
-  *medRxiv*, <https://doi.org/10.64898/2026.05.02.26352290>. Local copy in **research-os**:
+  *medRxiv*, <https://doi.org/10.64898/2026.05.02.26352290>. Local copy in **HPP documentation**:
   `assets/papers/hpp/shilo_2026_heterogeneity_of_insulin_resistance_surr/`.
 - Neeland et al. (2019), replicated NMR signature of VAT,
   <https://doi.org/10.1161/JAHA.118.010810>.

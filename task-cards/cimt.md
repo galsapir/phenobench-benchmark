@@ -1,7 +1,5 @@
 # CIMT Task Card
 
-Status: draft
-
 Task id: `cimt`
 
 Evidence status: grounded
@@ -43,7 +41,7 @@ not about risk.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/cimt_review.json`, test split:
+an internal review record, test split:
 
 - V1 fundus + demographics reaches test R2 = 0.299 (95% CI [0.256, 0.342]) on a
   cohort of 7,403.
@@ -130,7 +128,7 @@ should include demographic-floor delta R2 and age-stratified residuals.
   <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12162042/>
 - Talmor-Barkan et al. (2026), RetiMap automated retinal vascular measurement.
   **Manuscript in preparation, no DOI** - treat as HPP context rather than a
-  citable source. Local copy in **research-os**:
+  citable source. Local copy in **HPP documentation**:
   `assets/papers/hpp/talmor_barkan_2026_retimap_automated_retinal_vascular_measu/`.
 
 ## Benchmark-Track Evidence
@@ -142,7 +140,7 @@ excluded. CIMT remains V1-only until a like-for-like V2 target is audited. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

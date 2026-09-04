@@ -1,7 +1,5 @@
 # GlycA Task Card
 
-Status: draft
-
 Task id: `glyca`
 
 Evidence status: grounded
@@ -49,7 +47,7 @@ Demonstrated in HPP, and persisted in this repository rather than asserted:
 
 - **Two matched tracks are already scored on canonical test splits**, both from
   the 2026-07-29 deep dive in
-  `docs/figure1/glyca_review.json`:
+  an internal review record:
   V1 CBC + demographics reaches test R² = 0.150 (95% CI [0.077, 0.217]) on a
   checksum-bound cohort of 2,760 with 8 features, and V1 DXA + demographics
   reaches R² = 0.120 (95% CI [0.071, 0.166]) on 6,580. TabSwift is top-ranked in
@@ -107,7 +105,7 @@ continuous target stays primary.
 
 Benchmark-Track Evidence reviewed: 2026-07-29.
 
-OpenEvidence review prioritized DXA body composition as the strongest
+literature review prioritized DXA body composition as the strongest
 independent shared predictor panel: adiposity is consistently associated with
 GlycA through inflammatory state. The existing matched HPP deep dive also
 found useful CBC signal. These findings motivate separate DXA and CBC tracks;
@@ -147,7 +145,7 @@ and sensitivity to participants with acute inflammatory outliers if available.
 - Gruppen et al., 2019, GlycA and mortality in PREVEND plus meta-analysis:
   <https://doi.org/10.1111/joim.12953>
 - Kohn et al. (2025), the Human Phenotype Project metabolic abstract, *SLEEP*,
-  <https://doi.org/10.1093/sleep/zsaf090.0054>. Local copy in **research-os**:
+  <https://doi.org/10.1093/sleep/zsaf090.0054>. Local copy in **HPP documentation**:
   `assets/papers/hpp/kohn_2025_0054_the_human_phenotype_project_metabol/`.
 - Dullaart et al., 2015, GlycA, adiposity, and glucose-tolerance status:
   <https://doi.org/10.1016/j.clinbiochem.2015.05.001>

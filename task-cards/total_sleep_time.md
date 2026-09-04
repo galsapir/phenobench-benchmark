@@ -1,7 +1,5 @@
 # Total Sleep Time Task Card
 
-Status: draft
-
 Task id: `total_sleep_time`
 
 Evidence status: grounded
@@ -64,7 +62,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Watson et al. (2015), AASM/SRS recommended sleep duration for adults, <https://doi.org/10.5664/jcsm.4950>.
 - Gaines et al. (2015), short- and long-term stability of objective sleep measures, <https://doi.org/10.5665/sleep.5152>.
 - Yalamanchali et al. (2013), WatchPAT validation meta-analysis, <https://doi.org/10.1001/jamaoto.2013.5338>.
-- HPP Research OS `sleep` dataset documentation and QC inventory.
+- HPP documentation `sleep` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -91,7 +89,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Reported gain is over the matched demographic-only model. Prior-target LOCF
   consumes a different Allowed Information Set and remains a separate
   historical reference, not a floor inside these diet Tracks.
-- TabSwift is deferred until GPU execution. Full contract and results:
+-  Full contract and results:
   `05-sleep-gut-aging.md`.
 
 ## Open Questions

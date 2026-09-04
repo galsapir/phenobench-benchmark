@@ -1,7 +1,7 @@
 {
   "model_family_summary": {
-    "source_commit": "c0aa22c8c87b5cebbd8a810315af249feff13191",
-    "source_digest": "sha256:a988452070c184deef00465c7c6cf0d5792c573258ff9382aab016346ae65ed7"
+    "source_commit": "596b6d4e58712275fad59bbc9950177e0e225fda",
+    "source_digest": "sha256:cb85a44785c0b54a84c1f1349eb9e294a348082639b18acfcd3752831bb07900"
   },
   "pb": {
     "source_commit": "09652513fbcdf4fba92979d2b22b08080aa8b2b8",

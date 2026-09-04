@@ -1,7 +1,5 @@
 # Diastolic Blood Pressure Task Card
 
-Status: draft
-
 Task id: `dbp`
 
 Evidence status: grounded
@@ -68,7 +66,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Mancia et al. (2023), ESH guidelines for the management of arterial hypertension, <https://doi.org/10.1097/HJH.0000000000003480>.
 - McEvoy et al. (2024), ESC guidelines for elevated blood pressure and hypertension, <https://doi.org/10.1093/eurheartj/ehae178>.
 - Flint et al. (2019), systolic and diastolic BP and cardiovascular outcomes, <https://doi.org/10.1056/NEJMoa1803180>.
-- HPP Research OS `blood_pressure` dataset documentation and QC inventory.
+- HPP documentation `blood_pressure` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -88,14 +86,14 @@ quantiles, and same-cohort deltas versus LOCF.
 
 ## Benchmark-Track Evidence
 
-Benchmark-Track Evidence reviewed: 2026-07-29. HPP and OpenEvidence review supports V1 sleep and
+Benchmark-Track Evidence reviewed: 2026-07-29. HPP and literature review supports V1 sleep and
 fundus morphology beyond age/sex/BMI. The full same-visit BP and vascular family
 must remain excluded. See
 `04-cardiovascular-lipid.md`.
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

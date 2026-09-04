@@ -1,7 +1,5 @@
 # Absolute Monocyte Count Task Card
 
-Status: draft
-
 Task id: `absolute_monocyte_count`
 
 Evidence status: grounded
@@ -64,7 +62,7 @@ target quantiles, and same-cohort deltas versus LOCF.
 
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Reicher et al. (2024), HPP longitudinal aging phenotypes, <https://doi.org/10.1038/s43587-024-00734-9>.
-- HPP Research OS `cbc` dataset documentation and field/QC inventory.
+- HPP documentation `cbc` dataset documentation and field/QC inventory.
 
 ## Execution Evidence
 

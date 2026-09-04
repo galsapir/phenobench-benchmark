@@ -1,7 +1,5 @@
 # Lumbar Spine BMD Task Card
 
-Status: draft
-
 Task id: `lumbar_spine_bmd`
 
 Evidence status: grounded
@@ -56,7 +54,7 @@ Compare representations on one cohort.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and broader literature search prioritize grip strength and
+literature review and broader literature search prioritize grip strength and
 objective movement/activity over NMR, CGM, sleep, or same-scan DXA features for
 a leakage-safe BMD benchmark. HPP gait work also reports strong prediction of
 bone-density traits. Same-visit DXA body composition is excluded because it

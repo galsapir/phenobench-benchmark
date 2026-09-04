@@ -1,7 +1,5 @@
 # Waist-Hip Ratio Task Card
 
-Status: draft
-
 Task id: `waist_hip_ratio`
 
 Evidence status: grounded
@@ -43,7 +41,7 @@ signal beyond sex and BMI.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review found that direct waist, hip, and regional-DXA features are
+literature review found that direct waist, hip, and regional-DXA features are
 too close to this ratio for a clean modality-addition claim. The proposed V1/V2
 track therefore uses only age, sex, BMI, and the fixed Nightingale panel. Its
 interpretation is metabolic information about body-fat distribution, not
@@ -68,7 +66,7 @@ include sex-stratified residuals and demographic-floor delta R2.
 - Waist/central-adiposity clinical context from the source material's
   body-composition section.
 - Reicher et al. (2025), deep phenotyping of the health/disease continuum,
-  *Nature Medicine*, <https://doi.org/10.1038/s41591-025-03790-9>. Local copy in **research-os**:
+  *Nature Medicine*, <https://doi.org/10.1038/s41591-025-03790-9>. Local copy in **HPP documentation**:
   `assets/papers/hpp/reicher_2025_deep_phenotyping_of_healthdisease_contin/`.
 - Neeland et al. (2019), replicated NMR signature of visceral adiposity,
   <https://doi.org/10.1161/JAHA.118.010810>.

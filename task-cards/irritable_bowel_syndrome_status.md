@@ -1,7 +1,5 @@
 # Irritable Bowel Syndrome Status Task Card
 
-Status: draft
-
 Task id: `irritable_bowel_syndrome_status`
 
 Evidence status: grounded
@@ -18,7 +16,7 @@ Implementation facts:
 - target dataset release: `anat_curated_phenotype`
 - target table: `anat.curated_phenotype.ibs`
 - target column read: `curated_phenotype`. **This is hardcoded in the loader**
-  (`hpp_loader.py:1450`), not taken from the Task
+  (an internal review record), not taken from the Task
 - `target_field` on the class is `ibs__curated_phenotype` and is **inert on
   this release** - it is read only by the alternate `frozen_v1_2` route
   (`_curated_phenotype_status.py:336`). Do not treat it as the operative field
@@ -44,7 +42,7 @@ subtype identification.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/irritable_bowel_syndrome_status_review.json`,
+an internal review record,
 test split:
 
 - V1 gut species reaches test ROC AUC = 0.569 (95% CI [0.532, 0.610]) on a
@@ -127,8 +125,8 @@ Brier score, positive rate, split sizes.
 
 - DS-1584 Yeela-selected condition curation:
   `pha_condition_projection/DS-1584/condition_candidates_detailed.csv`.
-  **Does not resolve** in this repository or in research-os / research-harness /
-  research-os-stable; kept because it is the only pointer to how this condition
+  **Does not resolve** in this repository or in HPP documentation / HPP documentation /
+  HPP documentation; kept because it is the only pointer to how this condition
   was selected, and marked so it is not read as a repo path.
 - HPP refreshed curated-phenotype docs for `anat.curated_phenotype.ibs`.
 
@@ -141,7 +139,7 @@ Brier score, positive rate, split sizes.
 - Reported gain is over the matched demographic-only classifier. LOCF does not
   apply because this participant-level status Task has no prior-target input.
 - These are cross-sectional discrimination results, not diagnostic or causal
-  claims. TabSwift is deferred until GPU execution. Full contract and results:
+  claims.  Full contract and results:
   `05-sleep-gut-aging.md`.
 
 ## Open Questions

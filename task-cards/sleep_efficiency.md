@@ -1,7 +1,5 @@
 # Sleep Efficiency Task Card
 
-Status: draft
-
 Task id: `sleep_efficiency`
 
 Evidence status: grounded
@@ -70,7 +68,7 @@ quantiles, and same-cohort deltas versus LOCF.
   <https://doi.org/10.1016/S0140-6736(22)00879-0>.
 - Yalamanchali et al. (2013), WatchPAT validation meta-analysis, <https://doi.org/10.1001/jamaoto.2013.5338>.
 - Chouraki et al. (2022), night-to-night variability of home sleep parameters, <https://doi.org/10.1093/sleep/zsac319>.
-- HPP Research OS `sleep` dataset documentation and QC inventory.
+- HPP documentation `sleep` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -97,13 +95,13 @@ quantiles, and same-cohort deltas versus LOCF.
 - Reported gain is over the matched demographic-only model. Prior-target LOCF
   consumes a different Allowed Information Set and remains a separate
   historical reference, not a floor inside these diet Tracks.
-- TabSwift is deferred until GPU execution. Full contract and results:
+-  Full contract and results:
   `05-sleep-gut-aging.md`.
 
 ## Open Questions
 
 - Domain-expert review remains outstanding; evidence grounding and real-run gates are complete.
 - Cross-modal V1 value-add is tracked in
-  [#28](https://github.com/PhenoAI/phenobench/issues/28).
+  #28.
 - Objective/subjective discordance and night-variability surfaces are tracked in
-  [#29](https://github.com/PhenoAI/phenobench/issues/29).
+  #29.

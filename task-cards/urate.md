@@ -1,7 +1,5 @@
 # Serum Urate Task Card
 
-Status: draft
-
 Task id: `urate`
 
 Evidence status: grounded
@@ -54,7 +52,7 @@ split for all comparisons.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and broader Paperclip search support the fixed DXA panel
+literature review and broader literature search support the fixed DXA panel
 for both V1→V1 and V1→V2 tracks. Visceral fat has replicated dose-dependent
 associations with serum urate beyond basic anthropometrics. This motivates a
 regional-adiposity benchmark; it does not establish causality. Mask every urate
@@ -70,7 +68,7 @@ target quantiles, and same-cohort deltas versus LOCF.
 
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - FitzGerald et al. (2020), American College of Rheumatology gout guideline, <https://doi.org/10.1002/acr.24180>.
-- HPP Research OS `blood_tests` dataset documentation and field/QC inventory.
+- HPP documentation `blood_tests` dataset documentation and field/QC inventory.
 - PhenoBench issue-15 blood-source audit applies to every `blood_tests` Task in this card set.
 - Gu et al. (2025), visceral adipose tissue and serum urate:
   <https://doi.org/10.1186/s12889-025-22557-y>.

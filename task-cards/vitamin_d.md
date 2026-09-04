@@ -1,7 +1,5 @@
 # 25-Hydroxyvitamin D Task Card
 
-Status: draft
-
 Task id: `vitamin_d`
 
 Evidence status: grounded
@@ -72,14 +70,13 @@ target quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Demay et al. (2024), Endocrine Society vitamin-D guideline, <https://doi.org/10.1210/clinem/dgae290>.
 - Vogt et al. (2016), population NMR/MS profile of 25(OH)D, <https://doi.org/10.1093/ije/dyw222>.
-- HPP Research OS `blood_tests` dataset documentation and field/QC inventory.
+- HPP documentation `blood_tests` dataset documentation and field/QC inventory.
 - PhenoBench issue-15 blood-source audit applies to every `blood_tests` Task in this card set.
 
 ## V0 Benchmark Execution
 
 The two same-visit V1 tracks completed on 2026-07-29; both Ridge/GBDT rows per
-track are locally successful and remotely `FINISHED` in operational source. TabSwift
-is deferred until GPU execution is configured. Collection season remains unmodeled.
+track are locally successful and remotely `FINISHED` in operational source.  Collection season remains unmodeled.
 
 - Nightingale: n=2,283; test=336; best R2=0.121 (Ridge). GBDT showed paired
   delta R2 +0.063 [0.005, 0.128] over age/sex/BMI.

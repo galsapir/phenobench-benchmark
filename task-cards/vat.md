@@ -1,7 +1,5 @@
 # VAT Task Card
 
-Status: draft
-
 Task id: `vat`
 
 Evidence status: grounded
@@ -77,7 +75,7 @@ clinical measurements, so the PB asset mapping is:
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and paperclip search identified a replicated,
+literature review and literature search identified a replicated,
 BMI-independent plasma NMR signature of VAT. A separate external prediction
 study found little added Nightingale value after waist was supplied; the v0
 track therefore excludes waist and every DXA field and asks for lift over only
@@ -129,19 +127,19 @@ modality-value claims.
   Non-Diabetic Adults".
 - Shilo et al. (2026), heterogeneity of insulin-resistance surrogates,
   *medRxiv*, <https://doi.org/10.64898/2026.05.02.26352290>. Local copy in
-  **research-os**: `assets/papers/hpp/shilo_2026_heterogeneity_of_insulin_resistance_surr/`.
+  **HPP documentation**: `assets/papers/hpp/shilo_2026_heterogeneity_of_insulin_resistance_surr/`.
 - Neeland et al. (2019), replicated NMR signature of VAT,
   <https://doi.org/10.1161/JAHA.118.010810>.
 - Boone et al. (2022), external VAT prediction comparison,
   <https://doi.org/10.1093/aje/kwab298>.
 - Gabet et al. (2026), a gait foundation model predicting multi-system traits,
   *arXiv*, <https://doi.org/10.48550/arXiv.2603.25283>. Local copy in
-  **research-os**: `assets/papers/hpp/gabet_2026_a_gait_foundation_model_predicts_multi_s/`.
-- RetiMap mapping evidence in Research OS:
+  **HPP documentation**: `assets/papers/hpp/gabet_2026_a_gait_foundation_model_predicts_multi_s/`.
+- RetiMap mapping evidence in HPP documentation:
   `research_runs/phenobench-paper-task/next_batch_2026_06_22/`.
-- Kohn sleep mapping evidence in Research OS:
+- Kohn sleep mapping evidence in HPP documentation:
   `research_runs/phenobench-paper-task/next_batch_2026_06_22/`.
-- Gut microbiome mapping evidence in Research OS:
+- Gut microbiome mapping evidence in HPP documentation:
   `research_runs/phenobench-paper-task/hpp_full_corpus_asset_map_2026_06_22/`
   and prior `paper-replicate` runs for Rothschild, Keshet, Weissglas-Volkov,
   Zahavi, and Segev.

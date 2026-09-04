@@ -1,7 +1,5 @@
 # Non-HDL Cholesterol Task Card
 
-Status: draft
-
 Task id: `non_hdl`
 
 Evidence status: grounded
@@ -61,7 +59,7 @@ target quantiles, and same-cohort deltas versus LOCF.
 
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Khan et al. (2024), non-HDL cholesterol and cardiovascular risk, <https://doi.org/10.1161/CIRCULATIONAHA.123.067626>.
-- HPP Research OS `blood_tests` dataset documentation and field/QC inventory.
+- HPP documentation `blood_tests` dataset documentation and field/QC inventory.
 - PhenoBench issue-15 blood-source audit applies to every `blood_tests` Task in this card set.
 
 ## Execution Evidence
@@ -89,7 +87,7 @@ their subtraction algebraically reconstructs non-HDL. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

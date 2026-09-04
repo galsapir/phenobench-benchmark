@@ -1,7 +1,5 @@
 # Minimum Bilateral ABI Task Card
 
-Status: draft
-
 Task id: `minimum_bilateral_abi`
 
 Evidence status: grounded
@@ -85,7 +83,7 @@ vascular-waveform families remain excluded. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

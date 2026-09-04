@@ -1,7 +1,5 @@
 # CGM Time in Range 70-180 Task Card
 
-Status: draft
-
 Task id: `cgm_time_in_range_70_180`
 
 Evidence status: grounded
@@ -26,11 +24,11 @@ Implementation facts:
 
 ## Why This Matters
 
-TIR 70-180 is a familiar CGM summary. In HPP it has a strong ceiling near 100%, which compresses its variance. This is a V1 cross-sectional demographic-floor benchmark (cross-modal value-add tracked in [#28](https://github.com/PhenoAI/phenobench/issues/28)), not forecasting; the near-zero demographic R2 is consistent with the ceiling. Ceiling/variance diagnostics are tracked in [#35](https://github.com/PhenoAI/phenobench/issues/35).
+TIR 70-180 is a familiar CGM summary. In HPP it has a strong ceiling near 100%, which compresses its variance. This is a V1 cross-sectional demographic-floor benchmark (cross-modal value-add tracked in #28), not forecasting; the near-zero demographic R2 is consistent with the ceiling. Ceiling/variance diagnostics are tracked in #35.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review, CGMap, and HPP insulin-resistance work support DXA body
+literature review, CGMap, and HPP insulin-resistance work support DXA body
 composition and a non-glycaemic Nightingale panel as compact independent
 cross-modal tracks. Evidence is mainly cross-sectional association; the
 benchmark tests held-out prediction. Every same-visit CGM field remains masked.
@@ -51,8 +49,8 @@ V1-only evaluation compares age/sex/BMI linear and tree floors on one cohort/spl
 
 ## Caveats
 
-- The planned cross-modal shape ([#28](https://github.com/PhenoAI/phenobench/issues/28)) must mask the full same-visit CGM family and raw stream, especially complementary range bins and composite scores; this wave runs only the demographic floor.
-- Only 222 paired summaries exist, so this Task is V1 same-visit only. Ceiling prevalence is not yet reported (tracked in [#35](https://github.com/PhenoAI/phenobench/issues/35)); do not transfer diabetes treatment targets to this generally healthy cohort.
+- The planned cross-modal shape (#28) must mask the full same-visit CGM family and raw stream, especially complementary range bins and composite scores; this wave runs only the demographic floor.
+- Only 222 paired summaries exist, so this Task is V1 same-visit only. Ceiling prevalence is not yet reported (tracked in #35); do not transfer diabetes treatment targets to this generally healthy cohort.
 - A good score supports prediction of this measurement only; it does not
   establish diagnosis, causality, or intervention response.
 
@@ -61,7 +59,7 @@ V1-only evaluation compares age/sex/BMI linear and tree floors on one cohort/spl
 Primary R2. Also report RMSE, MAE, Pearson r, Spearman rho, and split Ns.
 Target-distribution (quantiles), constant/median-baseline, and ceiling-prevalence
 diagnostics are not yet computed for this wave; they are tracked in
-[#35](https://github.com/PhenoAI/phenobench/issues/35).
+#35.
 
 ## References
 
@@ -69,7 +67,7 @@ diagnostics are not yet computed for this wave; they are tracked in
 - Shilo et al. (2023), HPP CGM atlas, <https://doi.org/10.1016/j.cmet.2023.04.002>.
 - Battelino et al. (2019), CGM time-in-range consensus, <https://doi.org/10.2337/dci19-0028>.
 - Bent et al. (2021), iGLU CGM feature construction, <https://doi.org/10.1371/journal.pone.0248560>.
-- HPP Research OS `cgm` dataset documentation and QC inventory.
+- HPP documentation `cgm` dataset documentation and QC inventory.
 
 ## Execution Evidence
 

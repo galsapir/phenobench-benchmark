@@ -1,7 +1,5 @@
 # CGM Mean Glucose Task Card
 
-Status: draft
-
 Task id: `cgm_mean_glucose`
 
 Evidence status: grounded
@@ -30,12 +28,12 @@ Mean interstitial glucose summarizes ambient glycaemic exposure during the
 monitoring period, including values and excursions missed by a single fasting
 sample. This is a V1 cross-sectional demographic-floor benchmark (age/sex/BMI): it
 is not glucose forecasting, not yet a cross-modal test (that value-add is tracked
-in [#28](https://github.com/PhenoAI/phenobench/issues/28)), and does not replace
+in #28), and does not replace
 fasting glucose or HbA1c.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review, CGMap, and HPP insulin-resistance work support DXA body
+literature review, CGMap, and HPP insulin-resistance work support DXA body
 composition and a non-glycaemic Nightingale panel as compact independent
 cross-modal tracks. Evidence is mainly cross-sectional association; the
 benchmark tests held-out prediction. Every same-visit CGM field remains masked.
@@ -61,7 +59,7 @@ V1-only evaluation compares age/sex/BMI linear and tree floors on one cohort/spl
 
 ## Caveats
 
-- The planned cross-modal shape ([#28](https://github.com/PhenoAI/phenobench/issues/28)) must mask the full same-visit CGM family and raw stream, especially AUC, GMI/eA1c, and every mean-derived feature; this wave runs only the demographic floor, so no CGM features enter X yet.
+- The planned cross-modal shape (#28) must mask the full same-visit CGM family and raw stream, especially AUC, GMI/eA1c, and every mean-derived feature; this wave runs only the demographic floor, so no CGM features enter X yet.
 - Only 222 HPP participants currently have paired V1/V2 summaries; this Task is V1 same-visit only for this wave.
 - A good score supports prediction of this measurement only; it does not
   establish diagnosis, causality, or intervention response.
@@ -71,7 +69,7 @@ V1-only evaluation compares age/sex/BMI linear and tree floors on one cohort/spl
 Primary R2. Also report RMSE, MAE, Pearson r, Spearman rho, and split Ns.
 Target-distribution (quantiles), constant/median-baseline, and ceiling diagnostics
 are not yet computed for this wave; they are tracked in
-[#35](https://github.com/PhenoAI/phenobench/issues/35).
+#35.
 
 ## References
 
@@ -82,7 +80,7 @@ are not yet computed for this wave; they are tracked in
 - Battelino et al. (2019), CGM time-in-range consensus, <https://doi.org/10.2337/dci19-0028>.
 - Broll et al. (2021), iglu R package for CGM metrics, <https://doi.org/10.1371/journal.pone.0248560>.
 - Selvin (2024), glucose management indicator versus laboratory HbA1c, <https://doi.org/10.2337/dci23-0086>.
-- HPP Research OS `cgm` dataset documentation and QC inventory.
+- HPP documentation `cgm` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -102,6 +100,6 @@ are not yet computed for this wave; they are tracked in
 
 - Domain-expert review remains outstanding; evidence grounding and real-run gates are complete.
 - Cross-modal V1 value-add is tracked in
-  [#28](https://github.com/PhenoAI/phenobench/issues/28).
+  #28.
 - CGM/laboratory discordance and progression surfaces are tracked in
-  [#29](https://github.com/PhenoAI/phenobench/issues/29).
+  #29.

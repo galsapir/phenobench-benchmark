@@ -1,7 +1,5 @@
 # Synthetic Regression Task Card
 
-Status: draft
-
 Task id: `synthetic_regression`
 
 Evidence status: seed

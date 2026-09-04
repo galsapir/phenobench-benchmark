@@ -1,7 +1,5 @@
 # Meal-Anchored PPGR Task Card
 
-Status: draft
-
 Task id: `meal_ppgr`
 
 Evidence status: grounded
@@ -53,8 +51,7 @@ Approved v0 tracks on the checksum-bound normalized trajectory bundle:
 - two-hour raw premeal CGM
 - the same raw premeal CGM plus target-meal diet
 
-Each track ranks Ridge and GBDT. TabSwift is deferred until GPU execution is
-configured; CPU TabSwift is not required for this release.
+Each track ranks Ridge and GBDT.
 
 Both v0 tracks use the same nutrition-complete logged-meal population exposed
 by the pinned normalized bundle. “CGM-only” means target-meal diet is withheld

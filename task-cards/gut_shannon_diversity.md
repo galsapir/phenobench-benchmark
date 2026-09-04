@@ -1,7 +1,5 @@
 # Gut Shannon Diversity Task Card
 
-Status: draft
-
 Task id: `gut_shannon_diversity`
 
 Evidence status: grounded
@@ -91,7 +89,7 @@ evaluation.
 - Reported gain is over the matched demographic-only model. Prior-target LOCF
   consumes a different Allowed Information Set and remains a separate
   historical reference, not a floor inside these diet Tracks.
-- TabSwift is deferred until GPU execution. Full contract and results:
+-  Full contract and results:
   `05-sleep-gut-aging.md`.
 
 ## Open Questions

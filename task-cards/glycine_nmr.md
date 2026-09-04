@@ -1,7 +1,5 @@
 # NMR Glycine Task Card
 
-Status: draft
-
 Task id: `glycine_nmr`
 
 Evidence status: grounded
@@ -31,7 +29,7 @@ Glycine is a circulating amino acid with metabolic associations and useful repea
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and Paperclip results support DXA body composition as the
+literature review and literature results support DXA body composition as the
 stronger independent panel: circulating glycine is inversely associated with
 abdominal adiposity and insulin-resistant states. CGM is a complementary
 functional-metabolism panel, but direct CGM-to-glycine prediction evidence is
@@ -74,7 +72,7 @@ target quantiles, and same-cohort deltas versus LOCF.
   <https://doi.org/10.1371/journal.pone.0084034>.
 - Adeva-Andany et al. (2018), insulin resistance and glycine metabolism,
   <https://doi.org/10.1007/s00726-017-2508-0>.
-- HPP Research OS `nightingale` dataset documentation and field/QC inventory.
+- HPP documentation `nightingale` dataset documentation and field/QC inventory.
 
 ## Execution Evidence
 

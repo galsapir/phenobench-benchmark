@@ -1,7 +1,5 @@
 # QRS Duration Task Card
 
-Status: draft
-
 Task id: `qrs_duration`
 
 Evidence status: grounded
@@ -61,7 +59,7 @@ quantiles, and same-cohort deltas versus LOCF.
 
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Kligfield et al. (2009), intraventricular-conduction ECG standardization, <https://doi.org/10.1161/CIRCULATIONAHA.108.191095>.
-- HPP Research OS `ecg` dataset documentation and QC inventory.
+- HPP documentation `ecg` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -87,7 +85,7 @@ See `04-cardiovascular-lipid.md`.
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

@@ -1,7 +1,7 @@
 rank,method_label,mean_rank,n_cells
-1,TabDPT,2.25,160
-2,TabICL,2.7563,160
-3,TabSwift,3.0375,160
-4,RealMLP,3.4875,160
-5,Ridge,3.9875,160
-6,GBDT,5.4813,160
+1,TabDPT,2.3375,160
+2,TabICL,2.8813,160
+3,TabSwift,3.1688,160
+4,RealMLP,3.6625,160
+5,Ridge,4.1125,160
+6,GBDT,4.8375,160

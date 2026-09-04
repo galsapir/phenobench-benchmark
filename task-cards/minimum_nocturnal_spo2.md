@@ -1,7 +1,5 @@
 # Minimum Nocturnal SpO2 Task Card
 
-Status: draft
-
 Task id: `minimum_nocturnal_spo2`
 
 Evidence status: grounded
@@ -51,7 +49,7 @@ For V1→V2 evaluation, compare age/sex/BMI demographic floor, prior-value LOCF,
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and HPP/Paperclip evidence support the fixed DXA panel as
+literature review and HPP/literature evidence support the fixed DXA panel as
 the minimal modality for V1→V1 and V1→V2 tracks. Regional fat and lean
 distribution associate with nocturnal oxygenation beyond BMI, while CGM
 evidence is weak outside diabetes. Exclude the complete sleep/oximetry family.
@@ -67,7 +65,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Kohn et al. (2025), HPP multi-night sleep phenotyping, <https://doi.org/10.1038/s41591-024-03481-x>.
 - Yalamanchali et al. (2013), WatchPAT validation meta-analysis, <https://doi.org/10.1001/jamaoto.2013.5338>.
-- HPP Research OS `sleep` dataset documentation and QC inventory.
+- HPP documentation `sleep` dataset documentation and QC inventory.
 
 ## Execution Evidence
 

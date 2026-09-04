@@ -1,7 +1,5 @@
 # Gut Microbiome Longitudinal Identity Retrieval Task Card
 
-Status: draft
-
 Task id: `gut_microbiome_identity_retrieval`
 
 Evidence status: grounded
@@ -160,7 +158,7 @@ All comparator rows must share the Task cohort fingerprint and candidate count.
 
 ## References
 
-- HPP `gut_microbiome` dataset documentation in the Research OS.
+- HPP `gut_microbiome` dataset documentation in the HPP documentation.
 - Franzosa et al. (2015), *Identifying personal microbiomes using metagenomic
   codes*, <https://doi.org/10.1073/pnas.1423854112>.
 - Gloor et al. (2017), *Microbiome datasets are compositional: and this is not
@@ -216,9 +214,9 @@ The fixed shuffled-identity null was near chance for every feature-bearing row.
 Square-root preprocessing materially changes the result, and the low technical
 control does not prove artifact-free biological persistence. Gallery-size,
 time-gap, matched-negative, open-set/privacy, and pretrained-representation
-work is tracked in [#40](https://github.com/PhenoAI/phenobench/issues/40),
-[#41](https://github.com/PhenoAI/phenobench/issues/41), and
-[#42](https://github.com/PhenoAI/phenobench/issues/42).
+work is tracked in #40,
+#41, and
+#42.
 
 ## Open Questions
 

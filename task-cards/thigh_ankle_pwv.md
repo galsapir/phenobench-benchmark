@@ -1,7 +1,5 @@
 # Bilateral Thigh-to-Ankle Pulse-Wave Velocity Task Card
 
-Status: draft
-
 Task id: `thigh_ankle_pwv`
 
 Evidence status: grounded
@@ -47,7 +45,7 @@ cohort and split for every comparison.
 
 ## Caveats
 
-- **The V1→V2 longitudinal claim is rejected and excluded from the headline aggregates.** On the paired cohort (n=2251, `ds.silverdb.abi_all`), the V2 mean is 1.63 m/s (~1.1 SD) below V1 with test-retest r=0.47. PWV physiologically increases with age, so this wrong-direction shift reflects the thigh-ankle PWV segment being discontinued in July 2023 (device/protocol change), not forecasting error; it fully explains LOCF R2 = -1.65. V1 and V2 are not like-for-like. A V1-only cross-sectional rescope is tracked in [#37](https://github.com/PhenoAI/phenobench/issues/37).
+- **The V1→V2 longitudinal claim is rejected and excluded from the headline aggregates.** On the paired cohort (n=2251, `ds.silverdb.abi_all`), the V2 mean is 1.63 m/s (~1.1 SD) below V1 with test-retest r=0.47. PWV physiologically increases with age, so this wrong-direction shift reflects the thigh-ankle PWV segment being discontinued in July 2023 (device/protocol change), not forecasting error; it fully explains LOCF R2 = -1.65. V1 and V2 are not like-for-like. A V1-only cross-sectional rescope is tracked in #37.
 - Mask the full same-visit vascular family, including both PWV sides, distances, transit times, pressures, ABI, and waveform paths.
 - The HPP segment was discontinued in July 2023. Method-specific central-PWV cutoffs must not be transferred to this peripheral segment.
 - A good score supports prediction of this measurement only; it does not
@@ -63,7 +61,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Watahiki et al. (2020), thigh-ankle segment physiology, <https://doi.org/10.2147/VHRM.S284248>.
 - Reference Values for Arterial Stiffness Collaboration (2010), method-specific PWV context, <https://doi.org/10.1093/eurheartj/ehq165>.
-- HPP Research OS `vascular_health` dataset documentation and QC inventory.
+- HPP documentation `vascular_health` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -91,7 +89,7 @@ the longitudinal comparison. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

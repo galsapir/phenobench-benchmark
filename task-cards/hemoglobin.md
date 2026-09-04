@@ -1,7 +1,5 @@
 # Hemoglobin Task Card
 
-Status: draft
-
 Task id: `hemoglobin`
 
 Evidence status: grounded
@@ -84,13 +82,12 @@ target quantiles, and same-cohort deltas versus LOCF.
 - Pasricha et al. (2024), WHO hemoglobin thresholds, <https://doi.org/10.1016/S0140-6736(24)00502-6>.
 - Braat et al. (2024), age- and sex-specific hemoglobin thresholds for defining
   anemia, <https://doi.org/10.1016/S2352-3026(24)00030-9>.
-- HPP Research OS `cbc` dataset documentation and field/QC inventory.
+- HPP documentation `cbc` dataset documentation and field/QC inventory.
 
 ## V0 Benchmark Execution
 
 The two same-visit V1 tracks completed on 2026-07-29; both Ridge/GBDT rows per
-track are locally successful and remotely `FINISHED` in operational source. TabSwift
-is deferred until GPU execution is configured.
+track are locally successful and remotely `FINISHED` in operational source.
 
 - Nightingale: n=2,752; test=438; best R2=0.470 (Ridge), with paired delta R2
   +0.025 [-0.003, 0.052] over age/sex/BMI.
@@ -120,6 +117,6 @@ is deferred until GPU execution is configured.
 
 - Domain-expert review remains outstanding; evidence grounding and real-run gates are complete.
 - Adult anemia-status label construction is tracked in
-  [#31](https://github.com/PhenoAI/phenobench/issues/31).
+  #31.
 - Cross-modal V1 value-add is tracked in
-  [#28](https://github.com/PhenoAI/phenobench/issues/28).
+  #28.

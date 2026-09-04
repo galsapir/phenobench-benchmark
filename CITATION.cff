@@ -4,7 +4,6 @@ title: "PhenoBench: Mapping What a Deeply Phenotyped Human Cohort Can Tell Us"
 type: software
 version: 1.0.0
 date-released: 2026-09-01
-license: Apache-2.0
 repository-code: "https://github.com/galsapir/phenobench-benchmark"
 url: "https://galsapir.github.io/phenobench-benchmark/"
 authors:

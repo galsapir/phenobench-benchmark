@@ -1,7 +1,5 @@
 # Systolic Blood Pressure Task Card
 
-Status: draft
-
 Task id: `sbp`
 
 Evidence status: grounded
@@ -45,7 +43,7 @@ evidence about *lowering* it, which prediction does not touch.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/sbp_review.json`, test split:
+an internal review record, test split:
 
 - V1 fundus + demographics reaches test R2 = 0.374 (95% CI [0.329, 0.418]) on a
   cohort of 7,803.
@@ -139,19 +137,19 @@ split Ns, and high/low BP subgroup error.
 - Canoy et al., 2022, blood-pressure lowering and cardiovascular prevention:
   <https://doi.org/10.1007/s11886-022-01706-4>
 - Diament et al. (2023), a multimodal dataset of 21,412 recorded nights,
-  *arXiv*, <https://doi.org/10.48550/arxiv.2311.08979>. Local copy in **research-os**:
+  *arXiv*, <https://doi.org/10.48550/arxiv.2311.08979>. Local copy in **HPP documentation**:
   `assets/papers/hpp/diament_2023_a_multimodal_dataset_of_21412_recorded_n/`.
 
 ## Benchmark-Track Evidence
 
-Benchmark-Track Evidence reviewed: 2026-07-29. HPP and OpenEvidence review supports V1 sleep and
+Benchmark-Track Evidence reviewed: 2026-07-29. HPP and literature review supports V1 sleep and
 fundus morphology beyond age/sex/BMI. The full same-visit BP and vascular family
 must remain excluded. See
 `04-cardiovascular-lipid.md`.
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

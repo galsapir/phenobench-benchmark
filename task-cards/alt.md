@@ -1,7 +1,5 @@
 # Alanine Aminotransferase Task Card
 
-Status: draft
-
 Task id: `alt`
 
 Evidence status: grounded
@@ -35,7 +33,7 @@ AST, GGT, bilirubin, albumin, liver ultrasound, BMI, alcohol, and medications.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review supports Nightingale metabolic profiles and DXA regional
+literature review supports Nightingale metabolic profiles and DXA regional
 body composition as the two strongest systemic liver modalities beyond
 age/sex/BMI. The fixed Nightingale panel contains no ALT, AST, albumin, or
 platelets, avoiding direct target reconstruction. ALT remains an injury marker,
@@ -85,7 +83,7 @@ target quantiles, and same-cohort deltas versus LOCF.
 - Reicher et al. (2024), HPP longitudinal aging phenotypes, <https://doi.org/10.1038/s43587-024-00734-9>.
 - Rinella et al. (2023), AASLD NAFLD practice guidance, <https://doi.org/10.1097/HEP.0000000000000323>.
 - Masoodi et al. (2021), metabolomics/lipidomics in NAFLD, <https://doi.org/10.1038/s41575-021-00502-9>.
-- HPP Research OS `blood_tests` dataset documentation and field/QC inventory.
+- HPP documentation `blood_tests` dataset documentation and field/QC inventory.
 - PhenoBench issue-15 blood-source audit applies to every `blood_tests` Task in this card set.
 
 ## Execution Evidence

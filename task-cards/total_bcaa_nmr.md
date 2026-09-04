@@ -1,7 +1,5 @@
 # NMR Total Branched-Chain Amino Acids Task Card
 
-Status: draft
-
 Task id: `total_bcaa_nmr`
 
 Evidence status: grounded
@@ -31,7 +29,7 @@ Total BCAA summarizes circulating isoleucine, leucine, and valine and is associa
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and Paperclip results support DXA body composition as the
+literature review and literature results support DXA body composition as the
 stronger independent panel because adiposity and fat distribution are
 consistently associated with circulating BCAAs. CGM provides a complementary
 glucose-regulation panel, but circulating BCAA can remain stable despite
@@ -75,7 +73,7 @@ target quantiles, and same-cohort deltas versus LOCF.
   <https://doi.org/10.1371/journal.pone.0148361>.
 - Lee et al. (2021), BCAA metabolism, insulin sensitivity, and liver fat,
   <https://doi.org/10.1007/s00125-020-05296-0>.
-- HPP Research OS `nightingale` dataset documentation and field/QC inventory.
+- HPP documentation `nightingale` dataset documentation and field/QC inventory.
 
 ## Execution Evidence
 

@@ -1,7 +1,5 @@
 # Fatty Liver Index Task Card
 
-Status: draft
-
 Task id: `fli`
 
 Evidence status: grounded
@@ -64,7 +62,7 @@ claim is liver signal beyond BMI/waist and triglyceride reconstruction.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review prioritized Nightingale and DXA for direct hepatic-fat
+literature review prioritized Nightingale and DXA for direct hepatic-fat
 targets but identified FLI as a formula-reconstruction trap. FLI contains
 triglycerides, BMI, GGT, and waist. A Nightingale track must therefore exclude
 `Total_TG`, `VLDL_TG`, `LDL_TG`, and `HDL_TG`; a DXA track remains
@@ -115,7 +113,7 @@ demographic-floor delta R2 and consider BMI/waist-residualized analyses.
 - Lind et al. (2021), distinct metabolomic profiles for liver and visceral fat:
   <https://doi.org/10.1210/clinem/dgaa693>
 - Keshet et al. (2024), gut-microbiome features of metabolic health,
-  *Nature Communications*, <https://doi.org/10.1038/s41467-024-53832-y>. Local copy in **research-os**:
+  *Nature Communications*, <https://doi.org/10.1038/s41467-024-53832-y>. Local copy in **HPP documentation**:
   `assets/papers/hpp/keshet_2024_identification_of_gut_microbiome_feature/`.
 
 ## Open Questions
