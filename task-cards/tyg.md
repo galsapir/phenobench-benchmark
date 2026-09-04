@@ -1,7 +1,5 @@
 # TyG Task Card
 
-Status: draft
-
 Task id: `tyg`
 
 Evidence status: grounded

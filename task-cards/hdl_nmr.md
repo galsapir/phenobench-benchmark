@@ -1,7 +1,5 @@
 # NMR HDL Cholesterol Task Card
 
-Status: draft
-
 Task id: `hdl_nmr`
 
 Evidence status: grounded
@@ -62,7 +60,7 @@ target quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Julkunen et al. (2023), NMR metabolic biomarker reference atlas, <https://doi.org/10.1038/s41467-023-36231-7>.
 - Voight et al. (2012), HDL-C Mendelian-randomization interpretation, <https://doi.org/10.1016/S0140-6736(12)60312-2>.
-- HPP Research OS `nightingale` dataset documentation and field/QC inventory.
+- HPP documentation `nightingale` dataset documentation and field/QC inventory.
 
 ## Execution Evidence
 
@@ -89,7 +87,7 @@ excluded to prevent same-assay reconstruction. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

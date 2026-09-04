@@ -1,7 +1,5 @@
 # Maximum Bilateral Grip Strength Task Card
 
-Status: draft
-
 Task id: `maximum_bilateral_grip_strength`
 
 Evidence status: grounded
@@ -58,7 +56,7 @@ Compare representations on one cohort.
 
 The frozen v0 tracks use the fixed nine-field V1 Nightingale amino-acid panel
 (`Ala`, `Gln`, `Gly`, `His`, `Ile`, `Leu`, `Val`, `Phe`, `Tyr`) plus V1 age,
-sex, and BMI for both V1 and V2 grip targets. OpenEvidence and Paperclip
+sex, and BMI for both V1 and V2 grip targets. literature and literature
 support plasma metabolomics and branched-chain amino acids as independent
 muscle-mass and strength signals. Every hand-grip and DXA field is excluded.
 

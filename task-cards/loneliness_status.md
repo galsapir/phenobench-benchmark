@@ -1,7 +1,5 @@
 # Loneliness Status Task Card
 
-Status: draft
-
 Task id: `loneliness_status`
 
 Evidence status: grounded
@@ -52,7 +50,7 @@ loss, split sizes.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and broader Paperclip search support one objective-sleep
+literature review and broader literature search support one objective-sleep
 track. Actigraphic sleep fragmentation and efficiency associate with loneliness
 beyond demographics, with evidence of bidirectionality. HPP's own
 questionnaire study also selected subjective sleep patterns, but those fields
@@ -61,8 +59,8 @@ lifestyle, social, and psychological fields—not only the exact target.
 
 ## References
 
-- Arun 2026 loneliness-classification paper artifacts in Research OS.
-- Research OS run: `research_runs/phenobench-paper-task/arun_loneliness_2026_06_21/`.
+- Arun 2026 loneliness-classification paper artifacts in HPP documentation.
+- HPP documentation run: `research_runs/phenobench-paper-task/arun_loneliness_2026_06_21/`.
 - Benson et al. (2021), objective sleep and loneliness:
   <https://doi.org/10.1093/sleep/zsaa140>.
 

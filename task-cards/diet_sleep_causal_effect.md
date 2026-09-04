@@ -1,7 +1,5 @@
 # Diet-to-Sleep Causal Effect Task Card
 
-Status: draft
-
 Task id: `diet_sleep_causal_effect`
 
 Evidence status: grounded

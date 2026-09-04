@@ -1,7 +1,5 @@
 # Liver Stiffness Task Card
 
-Status: draft
-
 Task id: `liver_stiffness`
 
 Evidence status: grounded
@@ -35,7 +33,7 @@ Attenuation, speed of sound, viscosity, Q-box duplicates/stability, liver enzyme
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review found the strongest independent systemic evidence for
+literature review found the strongest independent systemic evidence for
 plasma metabolomic profiles, with DXA fat distribution as a secondary,
 predominantly cross-sectional modality. Advanced-fibrosis studies support
 metabolite signal beyond routine scores, while regional adiposity associates
@@ -87,7 +85,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Rinella et al. (2023), AASLD NAFLD practice guidance, <https://doi.org/10.1097/HEP.0000000000000323>.
 - Caussy et al. (2019), serum metabolites and advanced fibrosis, <https://doi.org/10.1136/gutjnl-2018-317584>.
 - Ciardullo et al. (2022), body-fat distribution and elastography-defined liver disease, <https://doi.org/10.1093/ajcn/nqac059>.
-- HPP Research OS `liver_ultrasound` dataset documentation and QC inventory.
+- HPP documentation `liver_ultrasound` dataset documentation and QC inventory.
 
 ## Execution Evidence
 

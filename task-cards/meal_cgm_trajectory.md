@@ -1,7 +1,5 @@
 # Meal-Conditioned CGM Trajectory Task Card
 
-Status: draft
-
 Task id: `meal_cgm_trajectory`
 
 Evidence status: grounded
@@ -256,7 +254,7 @@ cohort.
 - Shilo S, et al. *European Journal of Epidemiology*. 2021.
   <https://doi.org/10.1007/s10654-021-00753-5>
 - Rossman H, et al. CGM physical-activity preprocessing.
-  <https://github.com/hrossman/cgm-physical-activity/tree/an internal digest>
+  an internal source revision
 - Amazon Science. Chronos forecasting model family; Chronos-2 documents
   covariate-informed forecasting.
   <https://github.com/amazon-science/chronos-forecasting>

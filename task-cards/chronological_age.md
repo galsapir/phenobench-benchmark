@@ -1,7 +1,5 @@
 # Chronological Age Task Card
 
-Status: draft
-
 Task id: `chronological_age`
 
 Evidence status: grounded
@@ -66,7 +64,7 @@ against outcomes, and a stability analysis that none of these rows provide.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/chronological_age_review.json`,
+an internal review record,
 test split:
 
 - V1 sleep reaches test R2 = 0.273 (95% CI [0.237, 0.305]) on a cohort of 9,453.
@@ -229,9 +227,9 @@ when available, but do not treat them as observed targets.
 - Reicher, N. et al. 2024, "Phenome-wide associations of human aging uncover
   sex-specific dynamics".
 - Reicher et al. (2024), phenome-wide associations of human ageing,
-  *Nature Aging*, <https://doi.org/10.1038/s43587-024-00734-9>. Local copy in **research-os**:
+  *Nature Aging*, <https://doi.org/10.1038/s43587-024-00734-9>. Local copy in **HPP documentation**:
   `assets/papers/hpp/reicher_2024_phenome_wide_associations_of_human_aging/`.
-- Research OS replication package:
+- HPP documentation replication package:
   `research_runs/paper-replicate/reicher_2024_phenome_wide_associations_of_human_aging/`.
 - Argentieri, M.A. et al. (2024), proteomic aging clock predicting mortality and
   age-related disease (UK Biobank Olink),
@@ -247,7 +245,7 @@ when available, but do not treat them as observed targets.
 - The fusion artifact is checksum- and four-source-provenance-bound, but this
   release does not independently audit every upstream pretraining variable for
   age-correlated side channels. Treat 0.421 as a representation-probe result.
-- TabSwift is deferred until GPU execution. Full contract and results:
+-  Full contract and results:
   `05-sleep-gut-aging.md`.
 
 ## Olink Proteomic Clock — Initial Validation
@@ -256,7 +254,7 @@ First real-data validation of the Olink proteome route (baseline `00_00_visit`,
 `min_detection_rate=0.10`, `nan_below_lod`, `cohort_spec=predictor_support`).
 These are validation evidence, not published leaderboard rows.
 The implementation and validation discussion are recorded in
-[PR #149](https://github.com/PhenoAI/phenobench/pull/149); no dedicated
+PR #149; no dedicated
 leaderboard rows are committed for these numbers.
 
 **The figures below are an uncommitted validation read and are not reproducible

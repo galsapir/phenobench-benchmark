@@ -1,7 +1,5 @@
 # Lean Body Mass Task Card
 
-Status: draft
-
 Task id: `lean_body_mass`
 
 Evidence status: grounded
@@ -46,7 +44,7 @@ floor is not informative.
 
 The frozen v0 tracks use the fixed nine-field V1 Nightingale amino-acid panel
 (`Ala`, `Gln`, `Gly`, `His`, `Ile`, `Leu`, `Val`, `Phe`, `Tyr`) plus V1 age,
-sex, and BMI for both V1 and V2 lean-mass targets. OpenEvidence and Paperclip
+sex, and BMI for both V1 and V2 lean-mass targets. literature and literature
 support amino-acid and branched-chain-amino-acid associations with muscle mass
 and strength. Same-scan regional DXA fields remain excluded.
 
@@ -80,7 +78,7 @@ modality predictors.
 - Abramowitz et al., 2018, muscle mass, BMI, and mortality:
   <https://doi.org/10.1371/journal.pone.0194697>
 - Reicher et al. (2024), phenome-wide associations of human ageing,
-  *Nature Aging*, <https://doi.org/10.1038/s43587-024-00734-9>. Local copy in **research-os**:
+  *Nature Aging*, <https://doi.org/10.1038/s43587-024-00734-9>. Local copy in **HPP documentation**:
   `assets/papers/hpp/reicher_2024_phenome_wide_associations_of_human_aging/`.
 - Gabet et al. (2026), HPP gait foundation model,
   <https://doi.org/10.48550/arXiv.2603.25283>.

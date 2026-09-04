@@ -1,7 +1,5 @@
 # HbA1c Task Card
 
-Status: draft
-
 Task id: `hba1c`
 
 Evidence status: grounded

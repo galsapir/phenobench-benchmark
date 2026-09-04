@@ -1,7 +1,5 @@
 # FPG Task Card
 
-Status: draft
-
 Task id: `fpg`
 
 Evidence status: grounded
@@ -137,7 +135,7 @@ baselines on matched support.
 ## References
 
 - Source material: `docs/task_cards/source_material/foundation-model-surrogate-targets-v1.md`
-- GluFormer mapping evidence in Research OS:
+- GluFormer mapping evidence in HPP documentation:
   `research_runs/phenobench-paper-task/next_batch_2026_06_22/`.
 - Shilo et al. (2024), continuous glucose monitoring and intrapersonal
   variability in fasting glucose, *Nature Medicine*,

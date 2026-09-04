@@ -1,7 +1,5 @@
 # Body Weight Task Card
 
-Status: draft
-
 Task id: `body_weight`
 
 Evidence status: grounded
@@ -47,7 +45,7 @@ it contains weight. Use one cohort and split for all comparisons.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review found stronger independent Nightingale evidence for VAT
+literature review found stronger independent Nightingale evidence for VAT
 than for weight itself. Weight remains in the shared adiposity/body-size track
 as a representation probe, not a clinical headline. V1 age, sex, BMI, and the
 fixed Nightingale panel may predict V1 or V2 weight; height, waist, hip, every
@@ -71,7 +69,7 @@ target quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Reicher et al. (2025), Human Phenotype Project cohort profile, <https://doi.org/10.1038/s41591-025-03790-9>.
 - Jakicic et al. (2024), physical-activity and weight-management guidance, <https://doi.org/10.1249/MSS.0000000000003520>.
-- HPP Research OS `anthropometrics` dataset documentation and field/QC inventory.
+- HPP documentation `anthropometrics` dataset documentation and field/QC inventory.
 
 ## Execution Evidence
 

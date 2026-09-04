@@ -1,7 +1,5 @@
 # CGM Coefficient of Variation Task Card
 
-Status: draft
-
 Task id: `cgm_coefficient_of_variation`
 
 Evidence status: grounded
@@ -26,11 +24,11 @@ Implementation facts:
 
 ## Why This Matters
 
-CGM CV is a scale-normalized glycaemic-variability measure. This is a V1 cross-sectional demographic-floor benchmark (cross-modal value-add tracked in [#28](https://github.com/PhenoAI/phenobench/issues/28)), not forecasting. Prediction does not establish instability-related clinical risk or diabetes status.
+CGM CV is a scale-normalized glycaemic-variability measure. This is a V1 cross-sectional demographic-floor benchmark (cross-modal value-add tracked in #28), not forecasting. Prediction does not establish instability-related clinical risk or diabetes status.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review, CGMap, and HPP insulin-resistance work support DXA body
+literature review, CGMap, and HPP insulin-resistance work support DXA body
 composition and a non-glycaemic Nightingale panel as compact independent
 cross-modal tracks. Evidence is mainly cross-sectional association; the
 benchmark tests held-out prediction. Every same-visit CGM field remains masked.
@@ -54,7 +52,7 @@ V1-only evaluation compares age/sex/BMI linear and tree floors on one cohort/spl
 
 ## Caveats
 
-- The planned cross-modal shape ([#28](https://github.com/PhenoAI/phenobench/issues/28)) must mask the full same-visit CGM family and raw stream, explicitly including mean and SD components that reconstruct CV; this wave runs only the demographic floor.
+- The planned cross-modal shape (#28) must mask the full same-visit CGM family and raw stream, explicitly including mean and SD components that reconstruct CV; this wave runs only the demographic floor.
 - Only 222 paired V1/V2 summaries exist; this Task is V1 same-visit only. CV is unstable when mean or usable wear duration is poor, so retain upstream QC; note CV can also rise even as variability improves if mean glucose falls.
 - A good score supports prediction of this measurement only; it does not
   establish diagnosis, causality, or intervention response.
@@ -64,7 +62,7 @@ V1-only evaluation compares age/sex/BMI linear and tree floors on one cohort/spl
 Primary R2. Also report RMSE, MAE, Pearson r, Spearman rho, and split Ns.
 Target-distribution (quantiles), constant/median-baseline, and ceiling diagnostics
 are not yet computed for this wave; they are tracked in
-[#35](https://github.com/PhenoAI/phenobench/issues/35).
+#35.
 
 ## References
 
@@ -75,7 +73,7 @@ are not yet computed for this wave; they are tracked in
 - Danne et al. (2017), international consensus on CGM (CV <36% target), <https://doi.org/10.2337/dc17-1600>.
 - Shah et al. (2019), CGM profiles in healthy people without diabetes (within-person CV ~17%), <https://doi.org/10.1210/jc.2018-02763>.
 - Selvin et al. (2023), within-person and between-sensor CGM metric variability, <https://doi.org/10.1093/clinchem/hvac192>.
-- HPP Research OS `cgm` dataset documentation and QC inventory.
+- HPP documentation `cgm` dataset documentation and QC inventory.
 
 ## Execution Evidence
 

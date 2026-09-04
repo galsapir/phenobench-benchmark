@@ -1,7 +1,7 @@
 [project]
 name = "phenobench-materials"
 version = "0.1.0"
-description = "Anonymous, public-safe PhenoBench benchmark materials: synthetic examples, container contract, static leaderboard."
+description = "PhenoBench benchmark materials: aggregate results, task cards, synthetic examples, and container contract."
 requires-python = ">=3.11"
 dependencies = []
 

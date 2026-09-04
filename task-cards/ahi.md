@@ -1,7 +1,5 @@
 # AHI Task Card
 
-Status: draft
-
 Task id: `ahi`
 
 Evidence status: grounded
@@ -150,7 +148,7 @@ MAE interval includes zero; the R² comparison favors demographics.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review prioritizes DXA and Nightingale as two distinct
+literature review prioritizes DXA and Nightingale as two distinct
 cross-modal V1 tracks. DXA regional adiposity is more informative than BMI
 alone for sleep-disordered breathing. HPP evidence directly links VAT to pAHI
 and shows that NMR metabolites predict clinical OSA beyond age and BMI, with

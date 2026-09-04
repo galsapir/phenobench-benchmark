@@ -1,7 +1,5 @@
 # Mean Bilateral Ankle Pressure Task Card
 
-Status: draft
-
 Task id: `mean_ankle_pressure`
 
 Evidence status: grounded
@@ -61,7 +59,7 @@ quantiles, and same-cohort deltas versus LOCF.
 
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Thurston et al. (2019), ankle-brachial pressure-index review, <https://doi.org/10.1177/1708538119842395>.
-- HPP Research OS `vascular_health` dataset documentation and QC inventory.
+- HPP documentation `vascular_health` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -88,7 +86,7 @@ vascular-waveform families remain excluded. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

@@ -1,7 +1,5 @@
 # Triglycerides Task Card
 
-Status: draft
-
 Task ids: `tg`, `tg_nmr`
 
 Evidence status: grounded
@@ -68,7 +66,7 @@ row is a statement about this cohort's draw conditions as much as about biology.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/tg_review.json`, test split:
+an internal review record, test split:
 
 - V1 DXA + demographics reaches test R2 = 0.210 (95% CI [0.153, 0.262]) on a
   cohort of 3,573.
@@ -165,7 +163,7 @@ available.
 - Zhao et al., 2024, remnant cholesterol/triglycerides and cardiometabolic
   multimorbidity: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10951224/>
 - Shilo et al. (2026), heterogeneity of insulin-resistance surrogates,
-  *medRxiv*, <https://doi.org/10.64898/2026.05.02.26352290>. Local copy in **research-os**:
+  *medRxiv*, <https://doi.org/10.64898/2026.05.02.26352290>. Local copy in **HPP documentation**:
   `assets/papers/hpp/shilo_2026_heterogeneity_of_insulin_resistance_surr/`.
 
 ## Benchmark-Track Evidence
@@ -178,7 +176,7 @@ reconstruction. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

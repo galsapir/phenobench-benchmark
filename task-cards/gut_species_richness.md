@@ -1,7 +1,5 @@
 # Gut Species Richness Task Card
 
-Status: draft
-
 Task id: `gut_species_richness`
 
 Evidence status: grounded
@@ -59,7 +57,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Segev et al. (2026), HPP gut-microbiome richness analysis, <https://doi.org/10.1038/s41591-026-04312-x>.
 - Blanco-Míguez et al. (2023), MetaPhlAn 4, <https://doi.org/10.1038/s41587-023-01688-w>.
-- HPP Research OS `gut_microbiome species-level positive relative_abundance` dataset documentation and QC inventory.
+- HPP documentation `gut_microbiome species-level positive relative_abundance` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -87,7 +85,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Reported gain is over the matched demographic-only model. Prior-target LOCF
   consumes a different Allowed Information Set and remains a separate
   historical reference, not a floor inside these diet Tracks.
-- TabSwift is deferred until GPU execution. Full contract and results:
+-  Full contract and results:
   `05-sleep-gut-aging.md`.
 
 ## Open Questions

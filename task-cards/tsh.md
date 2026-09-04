@@ -1,7 +1,5 @@
 # Thyroid-Stimulating Hormone Task Card
 
-Status: draft
-
 Task id: `tsh`
 
 Evidence status: grounded
@@ -73,14 +71,13 @@ target quantiles, and same-cohort deltas versus LOCF.
 - van Vliet et al. (2021), multi-cohort TSH and metabolomic/lipid profiles, <https://doi.org/10.1186/s12916-021-02130-1>.
 - Jourdan et al. (2013), thyroid hormones and targeted metabolomics, <https://doi.org/10.1007/s11306-013-0563-4>.
 - Sun et al. (2024), TSH and DXA adiposity, <https://doi.org/10.1371/journal.pone.0314704>.
-- HPP Research OS `blood_tests` dataset documentation and field/QC inventory.
+- HPP documentation `blood_tests` dataset documentation and field/QC inventory.
 - PhenoBench issue-15 blood-source audit applies to every `blood_tests` Task in this card set.
 
 ## V0 Benchmark Execution
 
 The two same-visit V1 tracks completed on 2026-07-29; both Ridge/GBDT rows per
-track are locally successful and remotely `FINISHED` in operational source. TabSwift
-is deferred until GPU execution is configured.
+track are locally successful and remotely `FINISHED` in operational source.
 
 - Nightingale: n=4,276; test=644; best R2=0.007 (GBDT), with no clear gain
   over age/sex/BMI.

@@ -1,7 +1,5 @@
 # Liver Attenuation Task Card
 
-Status: draft
-
 Task id: `liver_attenuation`
 
 Evidence status: grounded
@@ -40,7 +38,7 @@ FLI, and liver blood tests; this Task does not establish their relationships.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review prioritized a fixed Nightingale metabolic panel, then DXA
+literature review prioritized a fixed Nightingale metabolic panel, then DXA
 regional body composition, for hepatic-fat prediction beyond age/sex/BMI.
 Metabolomic profiles show associations with liver fat distinct from visceral
 fat, while DXA android/gynoid and visceral fat capture adiposity not represented
@@ -70,19 +68,7 @@ S1/S2/S3 (AUROC 0.82/0.70/0.73). These are hypothesis-only leads: even a binary
 at-least-S1 Task requires HPP acquisition/software, population, balance, and
 repeatability validation. Canon ATI and CAP thresholds are not interchangeable.
 
-**These numbers are under reconciliation and must not be acted on yet -
-[research-harness#2](https://github.com/PhenoAI/research-harness/issues/2).**
-Pheno's HPP dataset documentation carries a **different** same-device Att.PLUS
-grade set: `S0 < 0.63 / S1 0.63-0.74 / S2 0.74-0.83 / S3 > 0.83`, cited to Popa
-et al. 2021, which measured Att.PLUS on the same Aixplorer MACH 30. So our own
-documentation puts the S1 boundary at **0.63** where this card puts it at
-**0.46**, and the harness figure is the one wired into runnable binning code
-(`knowledge_base/datasets/liver_ultrasound/loader.md`). HPP's median attenuation
-is 0.39, so the choice materially changes the cohort's steatosis character.
-
-Neither number is endorsed here pending that reconciliation. Note also that
-Tanpowpong 2024 is **not retrievable in the paperclip corpus**, so this card's
-own claim that it is same-platform is uncorroborated on our side.
+Published thresholds vary across studies and are not used as benchmark labels.
 
 ## Baselines And Ceilings
 
@@ -123,7 +109,7 @@ deltas against LOCF. Review age/BMI residuals and target-range coverage.
 - Does HPP repeatability support a device-matched binary threshold?
 - **Which Att.PLUS grade boundaries are operative for HPP - 0.46 (Tanpowpong
   2024, this card) or 0.63 (Popa 2021, the HPP dataset docs)?** Open at
-  [research-harness#2](https://github.com/PhenoAI/research-harness/issues/2).
+  HPP documentation.
   Whichever wins, both repositories should name the same study, and this card
   needs the corresponding edit. Blocked on that reconciliation, deliberately not
   guessed here.

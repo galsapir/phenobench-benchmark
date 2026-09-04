@@ -1,7 +1,5 @@
 # LDL-C Task Card
 
-Status: draft
-
 Task ids: `ldl`, `ldl_nmr`
 
 Evidence status: grounded
@@ -72,7 +70,7 @@ not about predicting it from other modalities.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/ldl_review.json`, test split:
+an internal review record, test split:
 
 - V1 CGM + demographics reaches test R2 = 0.022 (95% CI [-0.020, 0.062]) on a
   cohort of 3,153.
@@ -175,7 +173,7 @@ and compare demographic-floor delta R2 on matched support when possible.
 - Sniderman et al., 2024, lipid discordance and apoB context:
   <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11242442/>
 - Reicher et al. (2025), deep phenotyping of the health/disease continuum,
-  *Nature Medicine*, <https://doi.org/10.1038/s41591-025-03790-9>. Local copy in **research-os**:
+  *Nature Medicine*, <https://doi.org/10.1038/s41591-025-03790-9>. Local copy in **HPP documentation**:
   `assets/papers/hpp/reicher_2025_deep_phenotyping_of_healthdisease_contin/`.
 
 ## Benchmark-Track Evidence
@@ -187,7 +185,7 @@ derived lipid score remains excluded to prevent same-assay reconstruction. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

@@ -1,7 +1,5 @@
 # Ferritin Task Card
 
-Status: draft
-
 Task id: `ferritin`
 
 Evidence status: grounded
@@ -79,14 +77,13 @@ target quantiles, and same-cohort deltas versus LOCF.
 - Kaul et al. (2018), population metabolomic fingerprints of ferritin and hemoglobin, <https://doi.org/10.3390/nu10111800>.
 - Ko et al. (2020), AGA guideline on iron-deficiency-anemia evaluation (ferritin <45 ng/mL), <https://doi.org/10.1053/j.gastro.2020.06.046>.
 - Cullis et al. (2018), BSH investigation of a raised serum ferritin, <https://doi.org/10.1111/bjh.15166>.
-- HPP Research OS `blood_tests` dataset documentation and field/QC inventory.
+- HPP documentation `blood_tests` dataset documentation and field/QC inventory.
 - PhenoBench issue-15 blood-source audit applies to every `blood_tests` Task in this card set.
 
 ## V0 Benchmark Execution
 
 The two same-visit V1 tracks completed on 2026-07-29; both Ridge/GBDT rows per
-track are locally successful and remotely `FINISHED` in operational source. TabSwift
-is deferred until GPU execution is configured. Results predict total ferritin,
+track are locally successful and remotely `FINISHED` in operational source.  Results predict total ferritin,
 not iron stores.
 
 - Nightingale: n=3,351; test=512; best R2=0.217 (GBDT), with paired delta R2

@@ -1,7 +1,5 @@
 # FIB-4 / FIB-3 Task Card
 
-Status: draft
-
 Task ids: `fib4`, `fib3`
 
 Evidence status: grounded
@@ -91,7 +89,7 @@ lower demographic floor around R2 0.07 in the task code.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review supports Nightingale metabolomics as the primary systemic
+literature review supports Nightingale metabolomics as the primary systemic
 fibrosis modality and DXA body composition as secondary. The proposed fixed
 27-field Nightingale panel contains no AST, ALT, platelets, or albumin, so it
 does not directly expose a FIB component. An age/sex/BMI floor is

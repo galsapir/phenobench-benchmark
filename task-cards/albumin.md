@@ -1,7 +1,5 @@
 # Serum Albumin Task Card
 
-Status: draft
-
 Task id: `albumin`
 
 Evidence status: grounded
@@ -35,7 +33,7 @@ Nightingale albumin, total protein, liver enzymes, renal measurements, inflammat
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review ranked plasma NMR metabolomics and DXA regional body
+literature review ranked plasma NMR metabolomics and DXA regional body
 composition as the two most defensible systemic liver modalities. Albumin needs
 a stricter target mask than the other liver Tasks: every clinical or
 Nightingale albumin field must be absent. The proposed fixed 27-field
@@ -86,7 +84,7 @@ target quantiles, and same-cohort deltas versus LOCF.
 - Reicher et al. (2024), HPP longitudinal aging phenotypes, <https://doi.org/10.1038/s43587-024-00734-9>.
 - Rinella et al. (2023), AASLD NAFLD practice guidance, <https://doi.org/10.1097/HEP.0000000000000323>.
 - Masoodi et al. (2021), metabolomics/lipidomics in NAFLD, <https://doi.org/10.1038/s41575-021-00502-9>.
-- HPP Research OS `blood_tests` dataset documentation and field/QC inventory.
+- HPP documentation `blood_tests` dataset documentation and field/QC inventory.
 - PhenoBench issue-15 blood-source audit applies to every `blood_tests` Task in this card set.
 
 ## Execution Evidence

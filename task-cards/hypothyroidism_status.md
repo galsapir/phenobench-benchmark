@@ -1,7 +1,5 @@
 # Hypothyroidism Status Task Card
 
-Status: draft
-
 Task id: `hypothyroidism_status`
 
 Evidence status: grounded
@@ -69,8 +67,8 @@ Brier score, positive rate, split sizes.
 
 - DS-1584 Yeela-selected condition curation:
   `pha_condition_projection/DS-1584/condition_candidates_detailed.csv`.
-  **Does not resolve** in this repository or in research-os / research-harness /
-  research-os-stable; kept because it is the only pointer to how this condition
+  **Does not resolve** in this repository or in HPP documentation / HPP documentation /
+  HPP documentation; kept because it is the only pointer to how this condition
   was selected, and marked so it is not read as a repo path.
 - Shao et al. (2023), metabolomics of biochemically defined hypothyroidism,
   <https://doi.org/10.1210/clinem/dgac555>.
@@ -81,7 +79,7 @@ Brier score, positive rate, split sizes.
 
 The two participant-level tracks completed on 2026-07-29; both Ridge/GBDT rows
 per track are locally successful and remotely `FINISHED` in operational source.
-TabSwift is deferred until GPU execution is configured.
+
 
 - Nightingale: n=10,128; test=1,542 (102 positive, 1,440 negative); best
   AUROC=0.681 (logistic regression). The paired delta AUROC over age/sex/BMI

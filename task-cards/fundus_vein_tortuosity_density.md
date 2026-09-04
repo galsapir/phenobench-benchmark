@@ -1,7 +1,5 @@
 # Fundus Vein Tortuosity Density Task Card
 
-Status: draft
-
 Task id: `fundus_vein_tortuosity_density`
 
 Evidence status: grounded
@@ -62,7 +60,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Zhou et al. (2022), AutoMorph, <https://doi.org/10.1167/tvst.11.7.12>.
 - Shapira et al. (2024), HPP retinal microvascular architecture, <https://doi.org/10.1101/2024.04.05.24305164>.
-- HPP Research OS `fundus` dataset documentation and QC inventory.
+- HPP documentation `fundus` dataset documentation and QC inventory.
 
 ## Execution Evidence
 

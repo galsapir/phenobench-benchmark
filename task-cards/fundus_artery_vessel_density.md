@@ -1,7 +1,5 @@
 # Fundus Artery Mask Area Fraction Task Card
 
-Status: draft
-
 Task id: `fundus_artery_vessel_density`
 
 Evidence status: grounded
@@ -76,7 +74,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Zhou et al. (2022), AutoMorph, <https://doi.org/10.1167/tvst.11.7.12>.
 - Durbin et al. (2017), OCTA retinal microvascular density quantification, <https://doi.org/10.1001/jamaophthalmol.2017.0080>.
 - Shapira et al. (2024), RetiMap: HPP retinal vascular measures (medRxiv preprint), <https://doi.org/10.1101/2024.04.05.24305164>.
-- HPP Research OS `fundus` dataset documentation and QC inventory.
+- HPP documentation `fundus` dataset documentation and QC inventory.
 
 ## Execution Evidence
 
@@ -98,6 +96,6 @@ quantiles, and same-cohort deltas versus LOCF.
 
 - The v0 systemic Benchmark Tracks received clinical review on 2026-07-28.
 - Cross-modal V1 value-add is tracked in
-  [#28](https://github.com/PhenoAI/phenobench/issues/28).
+  #28.
 - A retinal-systemic association surface is tracked in
-  [#29](https://github.com/PhenoAI/phenobench/issues/29).
+  #29.

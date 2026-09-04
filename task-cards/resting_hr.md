@@ -1,7 +1,5 @@
 # Resting ECG Heart Rate Task Card
 
-Status: draft
-
 Task id: `resting_hr`
 
 Evidence status: grounded
@@ -57,7 +55,7 @@ declare the same way rather than leave a reader to infer it.
 ## Related HPP Measurements
 
 Demonstrated in HPP and persisted in this repository, from
-`docs/figure1/resting_hr_review.json`,
+an internal review record,
 test split:
 
 - V1 sleep + demographics reaches test R2 = 0.454 (95% CI [0.410, 0.495]) on a
@@ -188,7 +186,7 @@ rank/linear diagnostics when target and prediction are non-constant.
 
 - Diament et al. 2023, "A Multimodal Dataset of 21,412 Recorded Nights for Sleep
   and Respiratory Research"
-- Research OS paper-task run:
+- HPP documentation paper-task run:
   `research_runs/phenobench-paper-task/diament_sleep_hr_2026_06_18/`
 
 ## Benchmark-Track Evidence
@@ -201,7 +199,7 @@ excluded. See
 
 ## v0 Final-Test Status
 
-The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives. TabSwift is deferred until GPU execution is configured; it is not a missing or failed row.
+The classical release is complete: Ridge/logistic and GBDT are remotely verified on every approved exact cohort and rendered in the Figure 1 task deep dives.
 
 ## Open Questions
 

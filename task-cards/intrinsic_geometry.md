@@ -1,7 +1,5 @@
 # Intrinsic Geometry Task Card
 
-Status: draft
-
 Task id: `intrinsic_geometry`
 
 Evidence status: seed

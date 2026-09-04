@@ -1,7 +1,5 @@
 # eGFR Task Card
 
-Status: draft
-
 Task id: `egfr`
 
 Evidence status: grounded
@@ -89,7 +87,7 @@ Nightingale creatinine or closely related chemistry can trivially look strong.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and broader Paperclip search support V1 Nightingale as the
+literature review and broader literature search support V1 Nightingale as the
 minimal cross-modal track. Large population NMR studies associate lipoprotein,
 fatty-acid, and GlycA traits with creatinine-based eGFR after demographic
 adjustment, but the relationship is cross-sectional and may reflect reduced

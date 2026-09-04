@@ -1,7 +1,5 @@
 # Femoral-Neck Bone Mineral Density Task Card
 
-Status: draft
-
 Task id: `femoral_neck_bmd`
 
 Evidence status: grounded
@@ -47,7 +45,7 @@ cohort and split for every comparison.
 
 ## Benchmark-Track Evidence
 
-OpenEvidence review and literature search support grip strength and objective
+literature review and literature search support grip strength and objective
 movement/activity as the cleanest independent BMD modalities beyond age, sex,
 and BMI. PhenoBench therefore proposes V1 grip for both V1 and V2 BMD. Every
 same-visit DXA/bone-density field remains excluded; the existing prior-BMD
@@ -70,7 +68,7 @@ quantiles, and same-cohort deltas versus LOCF.
 - Lutsker et al. (2026), HealthFormer, <https://arxiv.org/abs/2604.27899>.
 - Baim et al. (2008), ISCD official positions, <https://doi.org/10.1097/SMJ.0b013e31817a8b02>.
 - Johnell et al. (2005), BMD and fracture prediction, <https://doi.org/10.1359/JBMR.050304>.
-- HPP Research OS `bone_density` dataset documentation and QC inventory.
+- HPP documentation `bone_density` dataset documentation and QC inventory.
 - Montgomery et al. (2024), objective activity and BMD,
   <https://doi.org/10.1093/jbmr/zjae017>.
 
