@@ -1,6 +1,16 @@
 {
+  "meal_cgm_earlier_evaluation": {
+    "file": "sha256:95116615a3435f8e031c48e68438af0ecf88b0c0c4b9ab5fa2505ee30246af2b",
+    "source_commit": "09652513fbcdf4fba92979d2b22b08080aa8b2b8",
+    "source_digest": "sha256:65ad9864bd8960412c38d3bccfbd038a39f92df1e284777ed7fbbc556df77d41"
+  },
   "model_family_summary": {
-    "source_commit": "596b6d4e58712275fad59bbc9950177e0e225fda",
+    "files": {
+      "model_family_cells.csv": "sha256:1e8efba338945075fc4ff899971aab65cd2b47c4d3a81f4dafb5b30584cb25e1",
+      "model_family_contrast.json": "sha256:1a5166a424224fc9bc2377af53f044eae3ef76e75318ac85200c595ab65d9767",
+      "model_family_summary.csv": "sha256:dfdfae8cce5e4f56c7e3537145c17dfc4aae1445f53c63b2b79a99817eb589b2"
+    },
+    "source_commit": "4bdfaa005084b9d950ca1da52ddfdfa0ae44ecad",
     "source_digest": "sha256:cb85a44785c0b54a84c1f1349eb9e294a348082639b18acfcd3752831bb07900"
   },
   "pb": {
@@ -14,7 +24,7 @@
       "win_rates.csv": "sha256:bb70b91d61304a5936be248559f4814b013dbf072ad9bb43904deb937cd95a71",
       "win_rates_common.csv": "sha256:0e0a299423d9350904a178df527eb3f1e396aed8c75a38a0e8d3873a2cfa163f"
     },
-    "source_commit": "cd5b9c8d2a16af7b12a74681c32890764391cd34"
+    "source_commit": "590a9c7a81f2ebbc30adb9b57cb682342082cb3a"
   },
   "schema_version": 1
 }
