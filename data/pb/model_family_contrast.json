@@ -1,0 +1,21 @@
+{
+  "comparison_cells": 160,
+  "confidence_interval": {
+    "draws": 5000,
+    "high": 0.006442570336039492,
+    "level": 0.95,
+    "low": 0.002324668689220692,
+    "method": "cell bootstrap percentile",
+    "seed": 20260828
+  },
+  "estimand": "Within-cell mean delta R2 of three pretrained models minus ridge delta R2",
+  "median_difference_r2": 0.004083135317669073,
+  "pretrained_methods": [
+    "TabSwift",
+    "TabICL",
+    "TabDPT"
+  ],
+  "reference_method": "Ridge",
+  "schema_version": 1,
+  "tasks": 52
+}

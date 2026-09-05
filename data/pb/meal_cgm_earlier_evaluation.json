@@ -1,0 +1,86 @@
+{
+  "cohort": {
+    "test_meals": 39412,
+    "total_meals": 258567,
+    "train_meals": 178801,
+    "validation_meals": 40354
+  },
+  "metric_unit": "mg/dL",
+  "primary_metric": "rmse",
+  "results": [
+    {
+      "feature_count": 17,
+      "iauc_mae_mgdl_min": 846.1864444934068,
+      "mae": 11.600770399759432,
+      "method": "Sequence ridge",
+      "participant_rmse_median": 14.637828936761458,
+      "participant_rmse_p90": 20.831814060104755,
+      "peak_glucose_mae": 14.716341835520664,
+      "rank": 1,
+      "rmse": 16.08380936181147,
+      "rmse_early_0_45": 14.901837550727292,
+      "rmse_late_60_120": 16.970216632269512,
+      "time_to_peak_mae_min": 25.970262864102303
+    },
+    {
+      "feature_count": 17,
+      "iauc_mae_mgdl_min": 907.9329216351925,
+      "mae": 12.406693726106994,
+      "method": "Sequence recursive arx",
+      "participant_rmse_median": 15.609686587806117,
+      "participant_rmse_p90": 21.705665176927052,
+      "peak_glucose_mae": 15.692371933508637,
+      "rank": 2,
+      "rmse": 16.92372971096688,
+      "rmse_early_0_45": 15.340592386594903,
+      "rmse_late_60_120": 18.09076309547032,
+      "time_to_peak_mae_min": 32.094793463919615
+    },
+    {
+      "feature_count": 17,
+      "iauc_mae_mgdl_min": 1000.5407479577219,
+      "mae": 13.249625896830521,
+      "method": "Sequence mean response",
+      "participant_rmse_median": 16.882649931011287,
+      "participant_rmse_p90": 24.814380721678457,
+      "peak_glucose_mae": 16.861894425262935,
+      "rank": 3,
+      "rmse": 18.456241506401366,
+      "rmse_early_0_45": 16.910082103748152,
+      "rmse_late_60_120": 19.605571391119913,
+      "time_to_peak_mae_min": 27.68103623261951
+    },
+    {
+      "feature_count": 17,
+      "iauc_mae_mgdl_min": 1092.611634781285,
+      "mae": 14.063313204100275,
+      "method": "Sequence last value",
+      "participant_rmse_median": 18.594923345720776,
+      "participant_rmse_p90": 27.29133973918545,
+      "peak_glucose_mae": 24.10836293514666,
+      "rank": 4,
+      "rmse": 20.214459265383784,
+      "rmse_early_0_45": 19.45206020318622,
+      "rmse_late_60_120": 20.804272089805103,
+      "time_to_peak_mae_min": 47.28623261950675
+    },
+    {
+      "feature_count": 17,
+      "iauc_mae_mgdl_min": 1542.8882548462398,
+      "mae": 24.243167055719073,
+      "method": "Sequence linear drift",
+      "participant_rmse_median": 32.43545004175847,
+      "participant_rmse_p90": 48.547664688735345,
+      "peak_glucose_mae": 28.658025981934433,
+      "rank": 5,
+      "rmse": 35.741528584742106,
+      "rmse_early_0_45": 25.223207007126355,
+      "rmse_late_60_120": 42.31375923566244,
+      "time_to_peak_mae_min": 63.77588044250482
+    }
+  ],
+  "schema_version": 1,
+  "status": "earlier evaluation reported in the paper",
+  "target_definition": "Nearest-bin CGM targets at 0, 15, ..., 120 minutes after a logged meal",
+  "task": "meal_cgm_trajectory"
+}
