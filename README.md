@@ -22,6 +22,9 @@ identifiers are distributed here.
 
 ## Explore
 
+Read the [PhenoBench paper on arXiv](https://arxiv.org/abs/2609.06080). Citation metadata
+is available in [`CITATION.cff`](CITATION.cff).
+
 Visit the [PhenoBench benchmark atlas](https://galsapir.github.io/phenobench-benchmark/),
 or serve the repository locally:
 

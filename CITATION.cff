@@ -27,6 +27,34 @@ authors:
     family-names: Segal
   - given-names: Hagai
     family-names: Rossman
+preferred-citation:
+  type: article
+  title: "PhenoBench: Mapping What a Deeply Phenotyped Human Cohort Can Tell Us"
+  journal: arXiv
+  year: 2026
+  doi: "10.48550/arXiv.2609.06080"
+  url: "https://arxiv.org/abs/2609.06080"
+  authors:
+    - given-names: Gal
+      family-names: Sapir
+    - given-names: Alon
+      family-names: Diament
+    - given-names: Adva
+      family-names: Wolf
+    - given-names: Doron
+      family-names: Yaya-Stupp
+    - given-names: Dikla
+      family-names: Gelbard Solodkin
+    - given-names: Dana
+      family-names: Azouri
+    - given-names: Anat
+      family-names: Etzion-Fuchs
+    - given-names: Guy
+      family-names: Lutsker
+    - given-names: Eran
+      family-names: Segal
+    - given-names: Hagai
+      family-names: Rossman
 keywords:
   - benchmark
   - deep phenotyping
