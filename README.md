@@ -7,7 +7,7 @@ provides:
 - an aggregate catalog of 90 clinically grounded tasks, 3 framework diagnostics,
   and their valid Benchmark Tracks;
 - static per-track leaderboards generated from the final Figure 1 evidence;
-- all 960 aggregate rows behind the matched model-family comparison;
+- all 1,760 aggregate rows behind the matched 11-method model-family comparison;
 - aggregate evidence for the earlier meal-CGM evaluation reported in the paper;
 - the 40-task PhenoBench-LLM proof-of-concept leaderboard;
 - a sanitized PhenoBench-LLM reproducibility package with frozen prompts,
