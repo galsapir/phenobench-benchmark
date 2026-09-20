@@ -5,14 +5,14 @@
     "source_digest": "sha256:65ad9864bd8960412c38d3bccfbd038a39f92df1e284777ed7fbbc556df77d41"
   },
   "model_family_summary": {
-    "analysis_digest": "sha256:114e2cc9cc0a4266c3c0b453ee52971377dcc48f42ad8529a438cd67ab778f0a",
+    "analysis_digest": "sha256:57a5276b0ac4bde263fa49ae99cf12be3e6bea366446315956d1b71fa7cd6379",
     "files": {
-      "model_family_cells.csv": "sha256:3339d9914fc227d28be4aaed90ab0fd7a108813c4cab1ce7ddc2589b5fb4655e",
+      "model_family_cells.csv": "sha256:1f8bac73e2fc12e705ce852d057be610d6ad74d3f7948f339e6bd1814e92111b",
       "model_family_contrast.json": "sha256:eed8d7d11bd9e3dd8b2911526ea0183126c17f4200a1604632042070f5def22c",
-      "model_family_summary.csv": "sha256:203b59b16c49ae4de06f21916389cdb64a92e4436a3bfe0b65274f41c3ae42ff"
+      "model_family_summary.csv": "sha256:a74a835896edb56c40750bb2190f6481029572edc1e98020ae0e64a0db287920"
     },
-    "source_commit": "dd551acd3b5c3549db1ebb3b40072709f8e12319",
-    "source_digest": "sha256:cfd499b3398ddbac77a5d0f27e9db0a11689dd975027c999885222f7f5460979"
+    "source_commit": "7b897cc3be14520b56be0a490116bd2aa9b5188a",
+    "source_digest": "sha256:580d7bd53c210965dd39c985a276bbe2511e8966bccc9325814fd02538ecb4eb"
   },
   "pb": {
     "source_commit": "b9bf3283940dc167ef1fd4de19932ec6c5378c0c",
