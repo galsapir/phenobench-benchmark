@@ -31,6 +31,8 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000/site/generated/`. Machine-readable evidence
 lives under `data/`; clinical context lives under `task-cards/`.
+See [cohort portability](docs/portability.md) for binding another cohort to an
+existing Task Card and evaluation contract.
 
 PhenoBench does not define one universal score. Results are ranked only within
 a Benchmark Track that fixes the Task, cohort, split, metric, and allowed
