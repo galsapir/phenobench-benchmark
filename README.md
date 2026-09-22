@@ -7,7 +7,7 @@ provides:
 - an aggregate catalog of 90 clinically grounded tasks, 3 framework diagnostics,
   and their valid Benchmark Tracks;
 - static per-track leaderboards generated from the final Figure 1 evidence;
-- all 960 aggregate rows behind the matched model-family comparison;
+- all 1,600 aggregate rows behind the matched 10-method model-family comparison;
 - aggregate evidence for the earlier meal-CGM evaluation reported in the paper;
 - the 40-task PhenoBench-LLM proof-of-concept leaderboard;
 - a sanitized PhenoBench-LLM reproducibility package with frozen prompts,
@@ -21,6 +21,9 @@ No participant data, private predictions, credentials, or private execution
 identifiers are distributed here.
 
 ## Explore
+
+Read the [PhenoBench paper on arXiv](https://arxiv.org/abs/2609.06080). Citation metadata
+is available in [`CITATION.cff`](CITATION.cff).
 
 Visit the [PhenoBench benchmark atlas](https://galsapir.github.io/phenobench-benchmark/),
 or serve the repository locally:
