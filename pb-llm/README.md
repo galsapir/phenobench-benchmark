@@ -52,9 +52,9 @@ when that field parsed to a finite JSON number.
 
 ## Evaluation
 
-All results are exploratory validation-set results. Scalar tasks used at most
-150 evaluation units sampled from the task's complete-evidence validation
-support. Ordering tasks used 120 seeded groups of four. The exact aggregate
+All results are exploratory validation-set results. Scalar tasks used 150 evaluation units, except hypothyroidism and migraine,
+which used 300 because of low label prevalence. Units were sampled from each
+task's complete-evidence validation support. Ordering tasks used 120 seeded groups of four. The exact aggregate
 coverage is in `metadata/model-task-coverage.csv`; absence means a model/task
 pair was not evaluated.
 
@@ -68,6 +68,12 @@ The headline win rate compares every pair of models on each common task, gives
 ties half credit, then divides each model's wins by its head-to-heads. Its 95%
 interval is a 2,000-replicate task-level percentile bootstrap with seed
 20260826.
+
+Absolute arm scores use each arm's valid outputs. Differences against the
+demographic floor and fitted probe use common evaluable participants or ranking
+groups for each paired comparison. Longitudinal carry-forward win flags likewise
+use paired estimates. These comparisons condition on valid outputs; missing
+predictions are not counted as incorrect predictions.
 
 ## What remains private
 
