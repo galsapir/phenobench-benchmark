@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "source_commit": "cd5b9c8d2a16af7b12a74681c32890764391cd34",
+  "source_commit": "bca822af57c308532ef7b5947e89d7d94823ca82",
   "evaluation_split": "validation",
   "cohort": {
-    "maximum_units_per_scalar_task": 150,
+    "maximum_units_per_scalar_task": 300,
     "sampling": "seeded uniform sample of complete-evidence validation units",
     "seed": 20260826
   },

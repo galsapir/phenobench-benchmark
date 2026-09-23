@@ -16,6 +16,14 @@ ROOT = Path(__file__).parents[1]
 PACKAGE = ROOT / "pb-llm"
 
 
+def test_scalar_cohort_limit_covers_published_manifests() -> None:
+    config = json.loads((PACKAGE / "configs/evaluation.json").read_text())
+    manifests = json.loads((PACKAGE / "metadata/cohort-manifests.json").read_text())
+    sizes = [row["scored_cohort_n"] for row in manifests["cohorts"]
+             if not row["task"].endswith("_group_rank")]
+    assert max(sizes) == config["cohort"]["maximum_units_per_scalar_task"]
+
+
 def _load_evaluation_module():
     path = PACKAGE / "code" / "evaluation.py"
     spec = importlib.util.spec_from_file_location("pb_llm_public_evaluation", path)
