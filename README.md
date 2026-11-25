@@ -21,7 +21,7 @@ No participant data, private predictions, credentials, or private execution
 identifiers are distributed here.
 
 ## Explore
-[Download the AIDaR workshop poster (NeurIPS 2026, PDF)](paper/phenobench-aidar-2026-poster.pdf).
+[Download the AIDaR workshop poster (NeurIPS 2026, v13 print PDF)](paper/phenobench-aidar-2026-poster.pdf).
 
 Read the [PhenoBench paper on arXiv](https://arxiv.org/abs/2609.06080). Citation metadata
 is available in [`CITATION.cff`](CITATION.cff).
